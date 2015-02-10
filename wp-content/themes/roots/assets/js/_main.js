@@ -36,6 +36,13 @@ var Roots = {
         else {navBar.removeClass('visible');
         }
       });
+
+
+      var searchField = $('.banner .search-field');
+      $('.banner .search-submit').click(function(){
+        searchField.addClass('visible');
+      });
+
     }
   },
   // Home page

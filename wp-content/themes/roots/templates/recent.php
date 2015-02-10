@@ -1,157 +1,65 @@
 <section>
-  <h2 class="section-header">Featured</h2>
-  <div class="row">
-    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
-      <div class="videotile1">
-        <div class="videotile effect-1">
-          <div class="videotile-content">
-            <div class="content-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/placeholder.png" class="img-responsive">
-            </div>
-            <div class="content-text">
-              <div class="text-title"><p>Implementing financial transparency at the state level: a governors perspective</p></div>
-              <div class="text-postdate"><p>January 19, 2014</p></div>
-            </div>
-          </div>
-          <div class="videotile-overlay clearfix">
-            <div class="overlay-text">
-              <div class="text-quote">Open Data is something that governments, large and small, can now adopt quite easily and cost-effectively.</div>
-              <div class="text-excerpt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros...</div>
-              <div class="text-icons">
-                <ul class="list list-inline">
-                  <li><i class="icon-clock"></i> 1:05:23<li>
-                  <li><i class="icon-eye"></i> 230<li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
-      <div class="videotile">
-        <div class="videotile-content">
-          <div class="content-img">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/placeholder.png" class="img-responsive">
-          </div>
-          <div class="content-text">
-            <div class="text-title"><p>Implementing financial transparency at the state level: a governors perspective</p></div>
-            <div class="text-postdate"><p>January 19, 2014</p></div>
-          </div>
-        </div>
-        <div class="videotile-overlay clearfix">
-          <div class="overlay-text">
-            <div class="text-quote">Open Data is something that governments, large and small, can now adopt quite easily and cost-effectively.</div>
-            <div class="text-excerpt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros...</div>
-            <div class="text-icons">
-              <ul class="list list-inline">
-                <li><i class="icon-clock"></i> 1:05:23<li>
-                <li><i class="icon-eye"></i> 230<li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
-      <div class="videotile">
-        <div class="videotile-content">
-          <div class="content-img">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/placeholder.png" class="img-responsive">
-          </div>
-          <div class="content-text">
-            <div class="text-title"><p>Implementing financial transparency at the state level: a governors perspective Implementing financial transparency at the state level: a governors perspective</p></div>
-            <div class="text-postdate"><p>January 19, 2014</p></div>
-          </div>
-        </div>
-        <div class="videotile-overlay clearfix">
-          <div class="overlay-text">
-            <div class="text-quote">Open Data is something that governments, large and small, can now adopt quite easily and cost-effectively.</div>
-            <div class="text-excerpt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros...</div>
-            <div class="text-icons">
-              <ul class="list list-inline">
-                <li><i class="icon-clock"></i> 1:05:23<li>
-                <li><i class="icon-eye"></i> 230<li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
-      <div class="videotile">
-        <div class="videotile-content">
-          <div class="content-img">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/placeholder.png" class="img-responsive">
-          </div>
-          <div class="content-text">
-            <div class="text-title"><p>Implementing financial transparency at the state level: a governors perspective Implementing financial transparency </p></div>
-            <div class="text-postdate"><p>January 19, 2014</p></div>
-          </div>
-        </div>
-        <div class="videotile-overlay clearfix">
-          <div class="overlay-text">
-            <div class="text-quote">Open Data is something that governments, large and small, can now adopt quite easily and cost-effectively.</div>
-            <div class="text-excerpt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros...</div>
-            <div class="text-icons">
-              <ul class="list list-inline">
-                <li><i class="icon-clock"></i> 1:05:23<li>
-                <li><i class="icon-eye"></i> 230<li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
-      <div class="videotile">
-        <div class="videotile-content">
-          <div class="content-img">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/placeholder.png" class="img-responsive">
-          </div>
-          <div class="content-text">
-            <div class="text-title"><p>Implementing financial transparency </p></div>
-            <div class="text-postdate"><p>January 19, 2014</p></div>
-          </div>
-        </div>
-        <div class="videotile-overlay clearfix">
-          <div class="overlay-text">
-            <div class="text-quote">Open Data is something that governments, large and small, can now adopt quite easily and cost-effectively.</div>
-            <div class="text-excerpt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros...</div>
-            <div class="text-icons">
-              <ul class="list list-inline">
-                <li><i class="icon-clock"></i> 1:05:23<li>
-                <li><i class="icon-eye"></i> 230<li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
-      <div class="videotile">
-        <div class="videotile-content">
-          <div class="content-img">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/placeholder.png" class="img-responsive">
-          </div>
-          <div class="content-text">
-            <div class="text-title"><p>Implementing financial transparency at the state level: a governors perspective Implementing financial transparency at the state level: a governors perspective</p></div>
-            <div class="text-postdate"><p>January 19, 2014</p></div>
-          </div>
-        </div>
-        <div class="videotile-overlay clearfix">
-          <div class="overlay-text">
-            <div class="text-quote">Open Data is something that governments, large and small, can now adopt quite easily and cost-effectively.</div>
-            <div class="text-excerpt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros...</div>
-            <div class="text-icons">
-              <ul class="list list-inline">
-                <li><i class="icon-clock"></i> 1:05:23<li>
-                <li><i class="icon-eye"></i> 230<li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <h2 class="section-header">Recent</h2>
+
+  <?php
+    $page_slug = $post->post_name;
+
+    $args = array(
+      'post_type' => 'video',
+      'order' => 'DES',
+      'posts_per_page' => 3,
+    );
+
+    $loop = new WP_Query( $args );
+    if ( $loop->have_posts() ) :
+      echo '<div class="row">';
+      while ( $loop->have_posts() ) : $loop->the_post();
+        $link = get_the_permalink();
+        $title = get_the_title();
+        $post_date = get_the_date();
+        $post_excerpt_quote = get_field('quote');
+        $post_excerpt = get_field('excerpt');
+        $post_runtime = '1:05:23';
+        $post_views = '230';
+
+        $featured_image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full' );
+        $featured_image = $featured_image[0];
+
+        echo '<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">';
+        echo '<a href="' . $link . '" title="' . $title . '">
+                <div class="videotile">
+                  <div class="videotile-content">
+                    <div class="content-img">
+                      <div class="img-container">';
+        echo           '<img src="' . $featured_image . '" class="img-responsive" alt="' . $title . '">
+                      </div>
+                      <div class="img-overlay">
+                        <i class="icon-play"></i>
+                      </div>
+                    </div>
+                    <div class="content-text">';
+        echo          '<div class="text-title"><p>' . $title . '</p></div>';
+        echo          '<div class="text-postdate"><p>' . $post_date . '</p></div>
+                    </div>
+                  </div>
+                  <div class="videotile-overlay clearfix">
+                    <div class="overlay-text">';
+        echo          '<div class="text-quote">' . $post_excerpt_quote . '</div>';
+        echo          '<div class="text-excerpt">' . $post_excerpt . '</div>
+                      <div class="text-icons">
+                        <ul class="list list-inline">';
+        echo              '<li><i class="icon-clock"></i> ' . $post_runtime . '<li>';
+        echo              '<li><i class="icon-eye"></i> ' . $post_views . '<li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              </div>';
+      endwhile;
+      echo '</div>';
+    endif;
+  ?>
+
 </section>

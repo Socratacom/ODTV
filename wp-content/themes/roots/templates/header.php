@@ -16,15 +16,17 @@
     </div>
 
     <div class="nav-right">
+      <div class="nav-search">
+        <?php get_search_form( $echo ); ?>
+      </div>
+    </div>
+
+    <div class="nav-right">
       <div class="nav-social">
         <div class="social-label">Share ODTV:</div>
         <div class="social-icons"><div class="addthis_sharing_toolbox"></div></div>
       </div>
-      <div class="nav-search">
-        x
-      </div>
     </div>
-
 
   </div>
 </header>

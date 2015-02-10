@@ -1,12 +1,12 @@
 <section>
-  <div class="hero-bg">
+  <div class="hero">
     <div class="videoWrapper">
       <iframe width="560" height="349" src="http://www.youtube.com/embed/ScMzIvxBSi4?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="hero">
+          <div class="hero-container">
             <div class="hero-logo">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/odtv-logo-hero.png">
             </div>
@@ -22,7 +22,7 @@
                 <a href="#" class="btn btn-primary btn-large btn-main">Browse Videos</a>
                 <a href="#" class="btn btn-default btn-sm btn-secondary">Featured</a>
                 <a href="#" class="btn btn-default btn-sm btn-secondary">Recent</a>
-                <div class="content-search pull-right">
+                <div class="content-search">
                   <?php get_search_form( $echo ); ?>
                 </div>
               </div>
