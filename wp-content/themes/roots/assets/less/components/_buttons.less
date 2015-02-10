@@ -1,0 +1,36 @@
+//restyle bootstrap buttons
+.btn {
+  margin: 0 10px 0 0;
+  border-radius: 0px;
+  .transition(all, 0.5s);
+}
+
+.btn-large {
+  padding: 10px 40px;
+  font-size: 14px;
+}
+
+.btn-default {
+  color: @odtv-white;
+  background-color: @med-gray;
+  border-color: @med-gray;
+
+  &:hover,
+  &:focus {
+    color: @odtv-white;
+    background-color: darken(@med-gray, 10%);
+    border-color: darken(@med-gray, 10%);
+  }
+}
+
+.btn-primary {
+  color: @odtv-white;
+  background-color: @odtv-red;
+  border-color: @odtv-red;
+
+  &:hover,
+  &:focus {
+    background-color: darken(@odtv-red, 10%);
+    border-color: darken(@odtv-red, 10%);
+  }
+}

@@ -1,0 +1,141 @@
+.videotile {
+  margin: 0 0 30px 0;
+  display: inline-block;
+  position: relative;
+  z-index: 999;
+}
+
+/* Trigger text */
+
+.videotile-content {
+  cursor: pointer;
+  display: inline-block;
+
+  .content-text {
+    height: 80px;
+
+    .text-title {
+      max-height: 60px;
+      overflow: hidden;
+
+      p {
+        margin: 0 0 5px 0;
+        font-size: 14px;
+        color: @odtv-white;
+      }
+    }
+
+    .text-postdate{
+      height: 100%;
+      p {
+        margin: 0 0 5px 0;
+        font-size: 14px;
+        color: @med-gray;
+      }
+    }
+  }
+}
+
+/* Gap filler */
+
+.videotile-content::after {
+  overlay: '';
+  position: absolute;
+  width: 360px;
+  height: 20px;
+  bottom: 100%;
+  left: 50%;
+  pointer-events: none;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.videotile:hover .videotile-content::after {
+  pointer-events: auto;
+}
+
+/* videotile */
+
+.videotile-overlay {
+  position: absolute;
+  z-index: 9999;
+  width: 360px;
+  left: 50%;
+  margin: 0 0 20px -180px;
+  bottom: 100%;
+  text-align: left;
+  font-size: 0.765em;
+  line-height: 1.4;
+  //box-shadow: -5px -5px 15px rgba(48,54,61,0.2);
+  background: @med-gray;
+  opacity: 0;
+  cursor: default;
+  pointer-events: none;
+
+  -webkit-transform: translate3d(0,-10px,0);
+  transform: translate3d(0,-10px,0);
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+
+  .overlay-text {
+  display: block;
+  padding: 20px 30px;
+  color: #fff;
+
+    .text-quote {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .text-excerpt {
+      margin:15px 0 0 0;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 1.4;
+    }
+
+    .text-icons {
+      margin: 20px 0 0 0;
+      color: @odtv-black;
+      font-size: 12px;
+      font-weight: 400;
+    }
+  }
+}
+
+.videotile:hover .videotile-overlay,
+.videotile-overlay:hover {
+  pointer-events: auto;
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0) rotate3d(0,0,0,0);
+  transform: translate3d(0,0,0) rotate3d(0,0,0,0);
+}
+
+/* Arrow */
+
+.videotile-overlay::after {
+  overlay: '';
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: transparent;
+  border-top-color: @med-gray;
+  border-width: 20px;
+  margin-left: -20px;
+}
+
+/* videotile overlay*/
+
+.videotile-overlay img {
+  position: relative;
+  height: 170px;
+  display: block;
+  float: left;
+  margin-right: 1em;
+}

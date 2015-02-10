@@ -1,0 +1,68 @@
+@heroTextContainerWidth : 60%;
+
+.hero-bg {
+  position: relative;
+  height:100vh;
+  background-image: url('../img/hero_bg.jpg');
+  background-size: cover;
+}
+
+.hero {
+  height:100vh;
+  min-height: 600px;
+  position: relative;
+
+  .hero-logo {
+    position: absolute;
+    top: 100px;
+  }
+
+  .hero-content {
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+
+    .content-text {
+      .text-headline {
+        margin-bottom: 10px;
+        h1 {
+          margin: 10px 0;
+          max-width: @heroTextContainerWidth;
+        }
+      }
+
+      .text-subtext {
+        margin-bottom: 40px;
+        p {
+          margin: 0 0 10px 0;
+          max-width: @heroTextContainerWidth;
+        }
+      }
+    }
+
+    .content-buttons {
+      .btn-secondary {
+        margin-top: 10px;
+      }
+    }
+
+    .content-search {
+      margin-top: 8px;
+    }
+  }
+ }
+
+.videoWrapper {
+  position: relative;
+  padding-top: 25px;
+  height: 100vh;
+  display: none;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

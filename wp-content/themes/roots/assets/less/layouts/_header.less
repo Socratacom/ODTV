@@ -1,0 +1,74 @@
+// Variables
+
+@navBarHeight: 120px;
+@logoMarginTop: 25px;
+@buttonMarginTop: 50px;
+@buttonMarginLeft: 10px;
+
+.banner {
+  background-color: @odtv-black;
+  border-color: @odtv-black;
+  border-radius: 0px;
+  border-bottom: 1px solid @med-gray;
+  .transition(all, 0.5s);
+
+  &.fixed {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: 1000;
+    height: 0;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  &.visible {
+    height: @navBarHeight;
+  }
+
+  .navbar-collapse,
+  .navbar-form {
+    background-color: @odtv-black;
+  }
+
+  .navbar-brand {
+    height: auto;
+    margin-top: @logoMarginTop;
+
+    img {
+      height: 40px
+    }
+  }
+
+  .nav-buttons {
+    float: left;
+    margin-top: @buttonMarginTop;
+    margin-left: @buttonMarginLeft;
+  }
+
+  .nav-right {
+    float: right;
+
+    .nav-social {
+      display: inline-block;
+      margin-top: @buttonMarginTop;
+
+      .social-label {
+        display: inline-block;
+        font-size: 12px;
+        color: @med-gray;
+        text-transform: uppercase;
+      }
+
+      .social-icons {
+        display: inline-block;
+      }
+    }
+
+    .nav-search {
+      display: inline-block;
+      margin-top: @buttonMarginTop;
+    }
+  }
+}
