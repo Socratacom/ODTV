@@ -25,9 +25,8 @@
         $title = get_the_title();
         $post_date = get_the_date();
         $post_excerpt_quote = get_field('quote');
-        $post_excerpt = get_field('excerpt');
-        $post_runtime = '1:05:23';
-        $post_views = '230';
+        $post_runtime = get_field('run_time');
+        $post_views = '[post_view]';
 
         $featured_image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full' );
         $featured_image = $featured_image[0];
@@ -56,7 +55,7 @@
                       <div class="text-icons">
                         <ul class="list list-inline">';
         echo              '<li><i class="icon-clock"></i> ' . $post_runtime . '<li>';
-        echo              '<li><i class="icon-eye"></i> ' . $post_views . '<li>
+        echo              '<li><i class="icon-eye"></i> ' . do_shortcode($post_views) . '<li>
                         </ul>
                       </div>
                     </div>
