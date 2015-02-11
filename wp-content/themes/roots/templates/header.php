@@ -24,7 +24,7 @@
     <div class="nav-right">
       <div class="nav-social">
         <div class="social-label">Share ODTV:</div>
-        <div class="social-icons"><div class="addthis_sharing_toolbox"></div></div>
+        <div class="social-icons"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/social.png"></div>
       </div>
     </div>
 
