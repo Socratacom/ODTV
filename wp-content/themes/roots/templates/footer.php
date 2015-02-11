@@ -19,9 +19,15 @@
       <div class="row">
         <div class="col-md-4">
           <div class="social-contribute">
-            <h4>Contribute</h4>
-            <p>Have an open data success you'd like to share? A suggested topic for us to cover</p>
-            <a href="#" class="btn btn-primary">Drop us a line</a>
+            <div class="contribute-headline">
+              <h4>Contribute</h4>
+            </div>
+            <div class="contribute-body">
+              <p>Have an open data success you'd like to share? A suggested topic for us to cover</p>
+            </div>
+            <div class="contribute-button">
+              <a href="#" class="btn btn-primary">Drop us a line</a>
+            </div>
           </div>
         </div>
         <div class="col-md-4">
@@ -69,3 +75,7 @@
   </section>
 
 </footer>
+
+
+<div id="portfolio-modal" class="modal fade" tabindex="-1">
+</div>
