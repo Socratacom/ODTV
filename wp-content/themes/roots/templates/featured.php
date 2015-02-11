@@ -1,4 +1,5 @@
 <section>
+  <a name="featured"></a>
   <h2 class="section-header">Featured</h2>
 
   <?php
@@ -6,7 +7,7 @@
 
     $args = array(
       'post_type' => 'video',
-      'order' => 'ASC',
+      'order' => 'DES',
       'tax_query' => array(
         array(
           'taxonomy'  => 'video-category',

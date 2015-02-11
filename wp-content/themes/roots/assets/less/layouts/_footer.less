@@ -1,36 +1,103 @@
-.content-info {
-  height: 125px;
+footer {
+  position: fixed;
+  bottom: 0;
+  z-index: -99;
+  width: 100%;
   padding-top: 44px;
-  border-top: 1px solid @odtv-dark-red;
 
-  .presented {
-    float: left;
-    color: @med-gray;
-    text-transform: uppercase;
+  .social {
+    background-image: url('../img/footer.jpg');
+    background-size: cover;
+    background-position: top center;
+    height: 480px;
 
-    img {
-      display: inline-block;
+    h4 {
+      font-size: 18px;
+      font-weight: 300;
+    }
+
+    p {
+      font-size: 12px;
+    }
+
+    .gform_wrapper {
+      .top_label {
+        .gfield_label {
+          display: none;
+        }
+
+        .ginput_container {
+          input {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .gform_footer {
+      margin: 10px 0 0 0;
+      padding: 0;
+    }
+
+    .social-headline {
+      text-align: center;
+      margin-top: 40px;
+
+      h3 {
+        font-size: 42px;
+      }
+    }
+
+    .social-subhead {
+      text-align: center;
+      margin-top: 20px;
+
+      p {
+        font-size: 18px;
+        font-weight: 300;
+      }
+    }
+
+    .social-icons {
+      text-align: center;
+      margin-top: 20px;
     }
   }
 
-  ul {
-    display: inline-block;
-  }
+  .subfooter {
+    border-top: 1px solid @odtv-dark-red;
+    height: 125px;
+    padding-top: 50px;
 
-  .copyright {
-    display: inline-block;
-    color: @med-gray;
-    text-transform: uppercase;
-  }
-
-  a {
-    color: @med-gray;
-    text-decoration: underline;
-    text-transform: uppercase;
-
-    &:hover,
-    &:focus {
+    .presented {
+      float: left;
       color: @med-gray;
+      text-transform: uppercase;
+
+      img {
+        display: inline-block;
+      }
+    }
+
+    ul {
+      display: inline-block;
+    }
+
+    .copyright {
+      display: inline-block;
+      color: @med-gray;
+      text-transform: uppercase;
+    }
+
+    a {
+      color: @med-gray;
+      text-decoration: underline;
+      text-transform: uppercase;
+
+      &:hover,
+      &:focus {
+        color: @med-gray;
+      }
     }
   }
 }

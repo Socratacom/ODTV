@@ -1,4 +1,5 @@
 <section>
+  <a name="recent"></a>
   <h2 class="section-header">Recent</h2>
 
   <?php

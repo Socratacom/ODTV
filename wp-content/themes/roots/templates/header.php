@@ -11,8 +11,8 @@
 
     <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/odtv-logo.png"></a>
     <div class="nav-buttons">
-      <a href="#" class="btn btn-default btn-sm">Featured</a>
-      <a href="#" class="btn btn-default btn-sm">Recent</a>
+      <a href="#featured" class="btn btn-default btn-sm">Featured</a>
+      <a href="#recent" class="btn btn-default btn-sm">Recent</a>
     </div>
 
     <div class="nav-right">

@@ -23,6 +23,8 @@ var Roots = {
   common: {
     init: function() {
       // JavaScript to be fired on all pages
+
+      //Sticky nav function
       var stickyOffset = $('.sticky').offset().top;
       var navBar = $('.fixed');
 
@@ -38,9 +40,30 @@ var Roots = {
       });
 
 
+      // expanding search form
       var searchField = $('.banner .search-field');
       $('.banner .search-submit').click(function(){
-        searchField.addClass('visible');
+        if(searchField.hasClass('visible')) {
+          searchField.removeClass('visible');
+        } else {
+          searchField.addClass('visible');
+        }
+      });
+
+      //smooth scroll to anchor
+
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') || location.hostname === this.hostname) {
+
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+             if (target.length) {
+               $('html,body').animate({
+                   scrollTop: (target.offset().top - 250)
+              }, 1000);
+              return false;
+          }
+        }
       });
 
     }

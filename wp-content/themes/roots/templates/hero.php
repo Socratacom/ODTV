@@ -2,7 +2,7 @@
   <div class="hero">
 
     <div class="videoWrapper">
-      <iframe width="560" height="349" src="http://www.youtube.com/embed/ScMzIvxBSi4?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
+      <iframe width="560" height="349" src="http://www.youtube.com/embed/ScMzIvxBSi4?rel=0&amp;hd=1" frameborder="0" allowfullscreen></iframe>
     </div>
 
     <div class="container">

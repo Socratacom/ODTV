@@ -56,6 +56,9 @@
     }
 
     .content-buttons {
+      float: left;
+      margin-top: 6px;
+
       .btn-secondary {
         margin-top: 10px;
       }
@@ -63,11 +66,29 @@
 
     .content-search {
       float: right;
-      margin-top: 8px;
+
+
+      .left-inner-addon {
+        position: relative;
+      }
+
+      .left-inner-addon input {
+        padding-left: 40px;
+      }
+
+      .left-inner-addon i {
+        position: absolute;
+        padding: 14px 12px;
+        pointer-events: none;
+        z-index: 99;
+        font-size: 20px;
+        color: @light-gray;
+      }
 
       form {
         input {
           width: 300px;
+          height: 48px;
           background-color: @med-gray;
           border: none;
           border-radius: 0px;
