@@ -50,6 +50,10 @@ var Roots = {
         }
       });
 
+      $('.playbutton').click(function() {
+        $('.videoWrapper').addClass('visible');
+      });
+
       //smooth scroll to anchor
       $('a[href*=#]:not([href=#])').click(function() {
         if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') || location.hostname === this.hostname) {

@@ -11,6 +11,13 @@
     padding-top: 25px;
     height: 100vh;
     display: none;
+    opacity: 0.0;
+    .transition(opacity, 0.5s);
+
+    &.visible {
+      display: block;
+      opacity: 1.0;
+    }
   }
 
   .videoWrapper iframe {
@@ -26,6 +33,14 @@
   height:100vh;
   min-height: 600px;
   position: relative;
+
+  a {
+    color: darken(@odtv-white, 20%);
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
 
   .hero-logo {
     position: absolute;

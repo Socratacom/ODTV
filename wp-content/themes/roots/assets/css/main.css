@@ -7494,6 +7494,14 @@ p {
   padding-top: 25px;
   height: 100vh;
   display: none;
+  opacity: 0.0;
+  -webkit-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+.hero .videoWrapper.visible {
+  display: block;
+  opacity: 1.0;
 }
 .hero .videoWrapper iframe {
   position: absolute;
@@ -7506,6 +7514,12 @@ p {
   height: 100vh;
   min-height: 600px;
   position: relative;
+}
+.hero-container a {
+  color: #c1c1c1;
+}
+.hero-container a:hover {
+  text-decoration: none;
 }
 .hero-container .hero-logo {
   position: absolute;

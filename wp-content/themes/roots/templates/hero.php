@@ -15,7 +15,7 @@
             </div>
 
             <div class="content-play" style="position:absolute;top:40%;left:50%;">
-                <i class="icon-play" style="font-size:80px;opacity:0.4;"></i>
+                <a href="#" class="playbutton"><i class="icon-play" style="font-size:80px;opacity:0.4;"></i></a>
               </div>
 
             <div class="hero-content">
