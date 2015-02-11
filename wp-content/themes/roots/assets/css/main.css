@@ -7825,6 +7825,9 @@ section .section-header {
 #portfolio-modal {
   color: #171717;
 }
+#portfolio-modal .row {
+  padding: 15px;
+}
 #portfolio-modal h1,
 #portfolio-modal h2,
 #portfolio-modal p {
@@ -7846,5 +7849,8 @@ section .section-header {
 }
 .modal-dialog {
   width: 800px !important;
+}
+.modal-body {
+  padding: 0 !important;
 }
 /*# sourceMappingURL=main.css.map */
