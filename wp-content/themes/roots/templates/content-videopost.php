@@ -19,7 +19,7 @@
               Share:
             </div>
             <div class="addThis-widget">
-              <div class="addthis_sharing_toolbox"></div>
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/social-white.jpg">
             </div>
           </div>
           <div class="socialBar-statsContainer">
