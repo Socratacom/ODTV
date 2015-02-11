@@ -33,7 +33,7 @@
         <div class="col-md-4">
           <div class="social-twitter">
             <div class="twitter-icon">
-              <i class="icon-play"></i>
+
             </div>
             <div class="twitter-body">
               <p>"@socrata thanks soooo much for inviting me to your AMAZING conference! Have learned so much and met some brilliant people. #SCS2014"</p>
