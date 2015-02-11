@@ -25,7 +25,7 @@
                   <h1>Welcome to Open Data TV</h1>
                 </div>
                 <div class="text-subtext">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+                  <p>Tune into ODTV to hear from the world’s foremost thought leaders on how government is using data to drive performance, boost the economy, and increase citizen engagement.</p>
                 </div>
               </div>
 
