@@ -7721,6 +7721,18 @@ footer .social {
   background-position: top center;
   height: 480px;
 }
+footer .social .social-twitter .twitter-body {
+  margin-top: 45px;
+}
+footer .social .social-twitter .twitter-author p {
+  font-size: 18px;
+  font-weight: 300;
+}
+footer .social .social-twitter .twitter-handle p {
+  font-size: 14px;
+  font-weight: 300;
+  font-style: italic;
+}
 footer .social h4 {
   font-size: 24px;
   font-weight: 300;
@@ -7740,14 +7752,14 @@ footer .social .gform_footer {
 }
 footer .social .social-headline {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 footer .social .social-headline h3 {
   font-size: 42px;
 }
 footer .social .social-subhead {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 footer .social .social-subhead p {
   font-size: 18px;
@@ -7755,7 +7767,8 @@ footer .social .social-subhead p {
 }
 footer .social .social-icons {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 footer .subfooter {
   border-top: 1px solid #8d0f11;
