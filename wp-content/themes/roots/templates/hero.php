@@ -14,6 +14,10 @@
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/odtv-logo-hero.png">
             </div>
 
+            <div class="content-play" style="position:absolute;top:40%;left:50%;">
+                <i class="icon-play" style="font-size:80px;opacity:0.4;"></i>
+              </div>
+
             <div class="hero-content">
 
               <div class="content-text">
@@ -24,6 +28,8 @@
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
                 </div>
               </div>
+
+
 
               <div class="content-buttons">
                 <a href="#featured" class="btn btn-primary btn-large btn-main">Browse Videos</a>
