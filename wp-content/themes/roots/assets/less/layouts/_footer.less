@@ -5,27 +5,110 @@ footer {
   width: 100%;
   padding-top: 44px;
 
+  .row {
+    .col-md-4 {
+
+      &:first-of-type {
+        padding-left: 15px;
+        padding-right: 45px;
+      }
+
+      padding-left: 30px;
+      padding-right: 30px;
+
+
+      &:last-of-type {
+        padding-left: 45px;
+        padding-right: 15px;
+      }
+
+    }
+  }
+
   .social {
     background-image: url('../img/footer.jpg');
     background-size: cover;
     background-position: top center;
-    height: 480px;
+    height: 780px;
+
+    h4 {
+      font-size: 26px;
+      font-weight: 300;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    hr {
+      opacity: 0.4;
+    }
+
+    .social-headline {
+      text-align: center;
+      margin-top: 92px;
+
+      h3 {
+        font-size: 63px;
+      }
+    }
+
+    .social-subhead {
+      text-align: center;
+      margin-top: 37px;
+
+      p {
+        font-size: 24px;
+        font-weight: 300;
+      }
+    }
+
+    .social-icons {
+      text-align: center;
+      margin-top: 43px;
+      height: 68px;
+      margin-bottom: 33px;
+    }
+
+    .social-contribute {
+      .contribute-headline {
+        margin-top: 40px;
+      }
+
+      .contribute-body {
+        margin-top: 19px;
+        line-height: 1.45;
+      }
+
+      .contribute-button {
+        margin-top: 20px;
+      }
+    }
 
     .social-twitter {
+      .twitter-icon {
+        margin-top: 30px;
+        font-size: 35px;
+      }
 
       .twitter-body {
-        margin-top: 45px;
+        margin-top: 5px;
+        line-height: 1.6;
       }
 
       .twitter-author {
+        margin-top: 20px;
         p {
+          margin: 0;
           font-size: 18px;
           font-weight: 300;
         }
       }
 
       .twitter-handle {
+        margin-top: 5px;
         p {
+          margin: 0;
           font-size: 14px;
           font-weight: 300;
           font-style: italic;
@@ -33,13 +116,18 @@ footer {
       }
     }
 
-    h4 {
-      font-size: 24px;
-      font-weight: 300;
-    }
+    .social-signup {
+      .signup-headline {
+        margin-top: 40px;
+      }
 
-    p {
-      font-size: 12px;
+      .signup-body {
+        margin-top: 18px;
+      }
+
+      .signup-form {
+        margin-top: 25px;
+      }
     }
 
     .gform_wrapper {
@@ -59,31 +147,6 @@ footer {
     .gform_footer {
       margin: 10px 0 0 0;
       padding: 0;
-    }
-
-    .social-headline {
-      text-align: center;
-      margin-top: 60px;
-
-      h3 {
-        font-size: 42px;
-      }
-    }
-
-    .social-subhead {
-      text-align: center;
-      margin-top: 20px;
-
-      p {
-        font-size: 18px;
-        font-weight: 300;
-      }
-    }
-
-    .social-icons {
-      text-align: center;
-      margin-top: 20px;
-      margin-bottom: 20px;
     }
   }
 

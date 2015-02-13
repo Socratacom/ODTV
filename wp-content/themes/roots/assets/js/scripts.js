@@ -2316,6 +2316,11 @@ var Roots = {
     init: function() {
       // JavaScript to be fired on all pages
 
+      function loadAddThis() {
+        addthis.init();
+        addthis.toolbox('.addthis_toolbox');
+      }
+
       //Sticky nav function
       var stickyOffset = $('.sticky').offset().top;
       var navBar = $('.fixed');
@@ -2344,6 +2349,8 @@ var Roots = {
 
       $('.playbutton').click(function() {
         $('.videoWrapper').addClass('visible');
+        $('.videoWrapper iframe').attr('src', $(".videoWrapper iframe").attr('src') + 'http://www.youtube.com/embed/ScMzIvxBSi4?autoplay=1;rel=0;hd=1');
+        $('.contentWrapper').addClass('hidden');
       });
 
       //smooth scroll to anchor
@@ -2363,7 +2370,7 @@ var Roots = {
 
       // Portfolio Modal
       jQuery(document).ready(function($) {
-          var $modal = $('#portfolio-modal');
+          var $modal = $('.portfolio-modal');
           var portfolio_url, portfolio_title;
 
           $('.videotile-link').on('click', function(e){
@@ -2381,11 +2388,6 @@ var Roots = {
                           width: 1100
                       });
                   });
-
-                  // Set URL to portfolio permalink
-                  //var History = window.History;
-                  //History.pushState( { state : portfolio_url }, portfolio_title, portfolio_url );
-
               }, 0);
 
           });
@@ -2395,7 +2397,7 @@ var Roots = {
                   $modal.find('.modal-title').html(portfolio_title);
 
               $modal.find('.modal-body').load(portfolio_url + ' article.type-video ', '' , function(){
-
+                addthis.toolbox('.addthis_toolbox');
               });
 
               }, 0);

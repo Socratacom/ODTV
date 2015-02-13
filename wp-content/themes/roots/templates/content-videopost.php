@@ -1,6 +1,6 @@
 <?php while (have_posts()) : the_post();
-
   $video_quote = get_field('quote');
+  $post_views = '[post_view]';
 ?>
   <article <?php post_class(); ?>>
 
@@ -10,66 +10,76 @@
         echo '<iframe width="560" height="315" src="https://www.youtube.com/embed/' . $videoUrl . '?rel=0&amp;vq=hd1080" frameborder="0" allowfullscreen></iframe>';
       ?>
     </div>
-
-    <div class="row">
-      <div class="col-md-12">
-        <div class="template-socialBar">
-          <div class="socialBar-addThis">
-            <div class="addThis-label">
-              Share:
-            </div>
-            <div class="addThis-widget">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/social-white.jpg">
-            </div>
+    <div class="template-socialBar">
+      <div class="socialBar-label">
+        Share:
+      </div>
+      <div class="socialBar-addThis">
+        <div class="addThis-widget">
+          <!-- AddThis Button BEGIN -->
+          <div class="addthis_toolbox addthis_64x64_style">
+            <a class="addthis_button_email"></a>
+            <a class="addthis_button_linkedin"></a>
+            <a class="addthis_button_google_plusone_share"></a>
+            <a class="addthis_button_twitter"></a>
+            <a class="addthis_button_facebook"></a>
+            <a class="addthis_button_expanded"></a>
           </div>
-          <div class="socialBar-statsContainer">
-            <div class="statsContainer-stats">
-              <div class="stats-number">
-                <p>112</p>
-              </div>
-              <div class="stats-label">
-                <p>views</p>
-              </div>
-            </div>
-            <div class="statsContainer-stats">
-              <div class="stats-number">
-                <p>56</p>
-              </div>
-              <div class="stats-label">
-                <p>likes</p>
-              </div>
-            </div>
-            <div class="statsContainer-stats">
-              <div class="stats-number">
-                <p>14</p>
-              </div>
-              <div class="stats-label">
-                <p>comments</p>
-              </div>
-            </div>
-          </div>
-          <div class="clearfix"></div>
         </div>
       </div>
+      <div class="socialBar-statsContainer">
+        <div class="statsContainer-stats">
+          <div class="stats-number">
+            <p><?php echo do_shortcode($post_views); ?></p>
+          </div>
+          <div class="stats-label">
+            <p>views</p>
+          </div>
+        </div>
+        <div class="statsContainer-stats">
+          <div class="stats-number">
+            <p>56</p>
+          </div>
+          <div class="stats-label">
+            <p>likes</p>
+          </div>
+        </div>
+        <div class="statsContainer-stats">
+          <div class="stats-number">
+            <p><?php comments_number( '0', '1', '%' ); ?></p>
+          </div>
+          <div class="stats-label">
+            <p>comments</p>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
     </div>
 
     <div class="row">
 
-      <div class="col-sm-6 col-md-8 col-md-9">
+      <div class="col-sm-8">
         <header>
           <h1 class="entry-title"><?php the_title(); ?></h1>
+
           <?php get_template_part('templates/entry-meta'); ?>
         </header>
         <div class="entry-content">
-          <div class="">
-            <?php echo $video_quote; ?>
+          <div class="content-quote">
+            <?php
+              echo '<i class="icon-quotes-left"></i><p>' . $video_quote . '</p><i class="icon-quotes-right"></i>';
+            ?>
           </div>
-          <?php the_content(); ?>
+            <?php
+              echo '<div class="content-body">';
+              the_content();
+              echo '</div>';
+            ?>
           <?php comments_template('/templates/comments.php'); ?>
         </div>
       </div>
 
-      <div class="col-sm-6 col-md-4 col-lg-3 border-left">
+      <div class="col-sm-4 border-left">
         <div class="template-speaker">
 
         <?php
@@ -91,18 +101,11 @@
 
         </div>
       </div>
-
     </div>
-
-
-
-
 
     <footer>
       <?php wp_link_pages(array('before' => '<nav class="page-nav"><p>' . __('Pages:', 'roots'), 'after' => '</p></nav>')); ?>
     </footer>
-
-
 
   </article>
 <?php endwhile; ?>

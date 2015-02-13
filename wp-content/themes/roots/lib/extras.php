@@ -60,3 +60,11 @@ add_action( 'init', 'build_taxonomies', 0 );
 function build_taxonomies() {
   register_taxonomy( 'video-category', 'video', array( 'hierarchical' => true, 'label' => 'Categories', 'query_var' => true, 'rewrite' => true ) );
 }
+
+
+add_filter("gform_submit_button", "form_submit_button", 10, 2);
+
+function form_submit_button($button, $form){
+
+    return "<button class='btn btn-primary' id='gform_submit_button_{$form["id"]}'><span class='bigger_text'>Subscribe</span></button>";
+}

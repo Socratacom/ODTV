@@ -25,7 +25,13 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: ~"calc(100% - 35px)";
+  }
+
+  .contentWrapper {
+    &.hidden {
+      display: none;
+    }
   }
 }
 
@@ -34,7 +40,7 @@
   min-height: 600px;
   position: relative;
 
-  a {
+  .playbutton {
     color: darken(@odtv-white, 20%);
 
     &:hover {
@@ -47,6 +53,26 @@
     top: 100px;
   }
 
+  .content-play {
+      position:absolute;
+      top: 40%;
+      left: 50%;
+
+      .playbutton {
+
+        i {
+          font-size:120px;
+          opacity: 0.4;
+
+          .transition(opacity, 0.5s);
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+
   .hero-content {
     position: absolute;
     bottom: 100px;
@@ -54,7 +80,6 @@
 
     .content-text {
       .text-headline {
-        margin-bottom: 10px;
         h1 {
           margin: 10px 0;
           max-width: @heroTextContainerWidth;
@@ -62,26 +87,32 @@
       }
 
       .text-subtext {
+        margin-top: 25px;
         margin-bottom: 40px;
+
         p {
           margin: 0 0 10px 0;
           max-width: @heroTextContainerWidth;
+
+          @media (min-width: @screen-lg-min) {
+            font-size: 20px;
+          }
         }
       }
     }
 
     .content-buttons {
       float: left;
-      margin-top: 6px;
+      margin-top: 15px;
 
       .btn-secondary {
-        margin-top: 10px;
+        margin-top: 25px;
       }
     }
 
     .content-search {
       float: right;
-
+      margin-top: 38px;
 
       .left-inner-addon {
         position: relative;
@@ -97,7 +128,7 @@
         pointer-events: none;
         z-index: 99;
         font-size: 20px;
-        color: @light-gray;
+        color: darken(@odtv-white, 20%);
       }
 
       form {

@@ -26,6 +26,7 @@
         $title = get_the_title();
         $post_date = get_the_date();
         $post_excerpt_quote = get_field('quote');
+        $post_excerpt = get_field('overlay_excerpt');
         $post_runtime = get_field('run_time');
         $post_views = '[post_view]';
 
@@ -51,8 +52,7 @@
                   </div>
                   <div class="videotile-overlay clearfix">
                     <div class="overlay-text">';
-        echo          '<div class="text-quote">' . $post_excerpt_quote . '</div>';
-        echo          '<div class="text-excerpt">' . $post_excerpt . '</div>
+        echo          '<div class="text-excerpt"><p>' . $post_excerpt . '</p></div>
                       <div class="text-icons">
                         <ul class="list list-inline">';
         echo              '<li><i class="icon-clock"></i> ' . $post_runtime . '<li>';
