@@ -2336,14 +2336,19 @@ var Roots = {
         }
       });
 
-
       // expanding search form
       var searchField = $('.banner .search-field');
-      $('.banner .search-submit').click(function(){
+      var searchExpand = $('.banner .btn-search');
+      var searchSubmit = $('.banner .search-submit');
+
+      searchExpand.click(function(){
         if(searchField.hasClass('visible')) {
           searchField.removeClass('visible');
         } else {
           searchField.addClass('visible');
+          searchSubmit.show();
+          searchExpand.hide();
+          searchField.focus();
         }
       });
 

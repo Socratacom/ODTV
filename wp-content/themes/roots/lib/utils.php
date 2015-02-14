@@ -10,7 +10,7 @@ function is_element_empty($element) {
 // Tell WordPress to use searchform.php from the templates/ directory
 function roots_get_search_form() {
   $form = '';
-  locate_template('/templates/searchform.php', true, false);
+    locate_template('/templates/searchform.php', true, false);
   return $form;
 }
 add_filter('get_search_form', 'roots_get_search_form');
@@ -28,3 +28,20 @@ function roots_body_class($classes) {
   return $classes;
 }
 add_filter('body_class', 'roots_body_class');
+
+// stop gravity form from auto scrolling to anchor position
+add_filter("gform_confirmation_anchor", create_function("","return false;"));
+
+// search only video post type
+function mySearchFilter($query) {
+  $post_type = $_GET['type'];
+  if (!$post_type) {
+    $post_type = 'any';
+  }
+    if ($query->is_search) {
+        $query->set('post_type', $post_type);
+    };
+    return $query;
+};
+
+add_filter('pre_get_posts','mySearchFilter');

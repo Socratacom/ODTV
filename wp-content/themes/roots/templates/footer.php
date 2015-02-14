@@ -62,7 +62,7 @@
               <p>Receive occasional news on open data.</p>
             </div>
             <div class="signup-form">
-              <?php echo do_shortcode('[gravityform id="1" title="false" description="false"]'); ?>
+              <?php echo do_shortcode('[gravityform id="1" title="false" description="false" ajax="true"]'); ?>
             </div>
           </div>
         </div>

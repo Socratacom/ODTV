@@ -15,16 +15,37 @@
       <a href="#recent" class="btn btn-default btn-sm">Recent</a>
     </div>
 
-    <div class="nav-right">
-      <div class="nav-search">
-        <?php get_search_form( $echo ); ?>
-      </div>
+    <div class="nav-search">
+      <form role="search" method="get" class="search-form form-inline" action="<?php echo esc_url(home_url('/')); ?>">
+        <label class="sr-only"><?php _e('Search for:', 'roots'); ?></label>
+        <div class="input-group left-inner-addon">
+          <i class="icon-search"></i>
+          <input id="search" type="search" value="<?php echo get_search_query(); ?>" name="s" class="search-field form-control" placeholder="<?php _e('Search', 'roots'); ?> title or keywords" required>
+          <input type="hidden" name="post_type" value="video" />
+
+          <span class="input-group-btn">
+            <a class="btn btn-default btn-search icon-search">
+            </a>
+            <button type="submit" class="search-submit btn btn-default icon-search">
+            </button>
+          </span>
+        </div>
+      </form>
     </div>
 
     <div class="nav-right">
       <div class="nav-social">
         <div class="social-label">Share ODTV:</div>
-        <div class="social-icons"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/social.png"></div>
+        <div class="social-icons">
+          <div class="addthis_toolbox addthis_32x32_style">
+            <a class="addthis_button_email"></a>
+            <a class="addthis_button_linkedin"></a>
+            <a class="addthis_button_google_plusone_share"></a>
+            <a class="addthis_button_twitter"></a>
+            <a class="addthis_button_facebook"></a>
+            <a class="addthis_button_expanded"></a>
+          </div>
+        </div>
       </div>
     </div>
 

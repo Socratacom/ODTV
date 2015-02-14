@@ -33,7 +33,7 @@ function register_custom_posts_init() {
   );
   register_post_type('video', $video_args);
 
-  // Register Video Post
+  // Register Speaker
 
   $speaker_labels = array(
       'name'               => 'Speaker',
@@ -50,7 +50,8 @@ function register_custom_posts_init() {
       'has_archive'        => true,
       'hierarchical'       => true,
       'taxonomies'         => array( 'speaker-category', 'speaker-tag' ),
-      'supports'           => array( 'title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'comments' )
+      'supports'           => array( 'title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'comments' ),
+      'exclude_from_search' => true
   );
   register_post_type('speaker', $speaker_args);
 }

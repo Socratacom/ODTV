@@ -6925,6 +6925,10 @@ button.close {
   background-color: #c8161e;
   border-color: #c8161e;
 }
+.btn.btn-search,
+.comment-form input[type="submit"].btn-search {
+  padding: 9px 10px;
+}
 .comment-list ol {
   list-style: none;
 }
@@ -7079,6 +7083,9 @@ fieldset[disabled] .gform_button {
     padding: 12px 25px;
     font-size: 16px;
   }
+}
+.gform_button.btn-search {
+  padding: 9px 10px;
 }
 .gform_button:hover,
 .gform_button:focus,
@@ -7518,16 +7525,16 @@ p {
   font-size: 14px;
   font-weight: 400;
 }
-.addthis_64x64_style a {
-  display: inline-block;
-  margin-right: -4px;
-}
 .addthis_64x64_style .at4-icon {
   width: 64px;
   height: 64px;
   line-height: 64px;
   -webkit-background-size: 64px 64px !important;
           background-size: 64px !important;
+}
+.addthis_toolbox a {
+  display: inline-block;
+  margin-right: -4px;
 }
 .portfolio-modal {
   color: #171717;
@@ -7806,6 +7813,9 @@ p {
 .banner.visible {
   height: 120px;
 }
+.banner .container {
+  position: relative;
+}
 .banner .navbar-collapse,
 .banner .navbar-form {
   background-color: #171717;
@@ -7822,12 +7832,44 @@ p {
   margin-top: 50px;
   margin-left: 10px;
 }
+.banner .nav-buttons .btn,
+.banner .nav-buttons .comment-form input[type="submit"] {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+.banner .nav-search {
+  position: absolute;
+  right: 0;
+  display: inline-block;
+  margin-top: 50px;
+  font-size: 12px;
+  color: #575757;
+}
+.banner .nav-search .left-inner-addon i {
+  display: none;
+}
+.banner .nav-search form #search {
+  width: 0px;
+  padding: 0px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.banner .nav-search form #search.visible {
+  width: 300px;
+  padding: 0 20px;
+}
+.banner .nav-search form button {
+  display: none;
+  padding: 9px 10px;
+}
 .banner .nav-right {
   float: right;
 }
 .banner .nav-right .nav-social {
   display: inline-block;
   margin-top: 50px;
+  margin-right: 60px;
 }
 .banner .nav-right .nav-social .social-label {
   display: inline-block;
@@ -7837,28 +7879,6 @@ p {
 }
 .banner .nav-right .nav-social .social-icons {
   display: inline-block;
-}
-.banner .nav-right .nav-search {
-  display: inline-block;
-  margin-top: 50px;
-  font-size: 12px;
-  color: #575757;
-}
-.banner .nav-right .nav-search .left-inner-addon i {
-  display: none;
-}
-.banner .nav-right .nav-search input {
-  width: 0;
-  padding: 0;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-}
-.banner .nav-right .nav-search input.visible {
-  width: 200px;
-}
-.banner .nav-right .nav-search button {
-  padding: 9px 10px;
 }
 .sidebar {
   position: relative;
