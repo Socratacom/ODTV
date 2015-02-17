@@ -57,7 +57,7 @@ var Roots = {
 
       $('.playbutton').click(function() {
         $('.videoWrapper').addClass('visible');
-        $('.videoWrapper iframe').attr('src', $(".videoWrapper iframe").attr('src') + 'http://www.youtube.com/embed/ScMzIvxBSi4?autoplay=1;rel=0;hd=1');
+        player.playVideo();
         $('.contentWrapper').addClass('hidden');
       });
 
@@ -120,6 +120,7 @@ var Roots = {
   home: {
     init: function() {
       // JavaScript to be fired on the home page
+
     }
   },
   // About us page, note the change from about-us to about_us.
