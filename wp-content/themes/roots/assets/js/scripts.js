@@ -2371,13 +2371,13 @@ var Roots = {
       // Video Post Modal
       jQuery(document).ready(function($) {
           var $modal = $('.video-modal');
-          var portfolio_url, portfolio_title;
+          var video_url, video_title;
 
           $('.videotile-link').on('click', function(e){
               e.preventDefault();
 
-              portfolio_url = $(this).attr('href');
-              portfolio_title = $(this).attr('title');
+              video_url = $(this).attr('href');
+              video_title = $(this).attr('title');
 
               setTimeout(function(){
                   $modal.load('/wp-content/themes/roots/html-templates/video-modal.html', '', function(){
@@ -2391,9 +2391,9 @@ var Roots = {
 
           $modal.on('shown.bs.modal', function(){
               setTimeout(function(){
-                  $modal.find('.modal-title').html(portfolio_title);
+                  $modal.find('.modal-title').html(video_title);
 
-              $modal.find('.modal-body').load(portfolio_url + ' article.type-video ', '' , function(){
+              $modal.find('.modal-body').load(video_url + ' article.type-video ', '' , function(){
                 addthis.toolbox('.addthis_toolbox');
               });
 

@@ -6,8 +6,7 @@
   </div>
 <?php endif; ?>
 
-  <?php //get_template_part('templates/content', get_post_format()); ?>
-
+<div class="sticky">
   <?php
 
     global $query_string;
@@ -26,7 +25,6 @@
       while ( $search->have_posts() ) : $search->the_post();
 
         if('video' === $post->post_type) {
-
 
         $link = get_the_permalink();
         $title = get_the_title();
@@ -74,12 +72,17 @@
       endwhile;
     endif;
   ?>
+</div>
 
 <?php if ($wp_query->max_num_pages > 1) : ?>
-  <nav class="post-nav">
-    <ul class="pager">
-      <li class="previous"><?php next_posts_link(__('&larr; Older posts', 'roots')); ?></li>
-      <li class="next"><?php previous_posts_link(__('Newer posts &rarr;', 'roots')); ?></li>
-    </ul>
-  </nav>
+  <div class="row">
+    <div class="col-md-12">
+      <nav class="post-nav">
+        <ul class="pager">
+          <li class="previous"><?php next_posts_link(__('&larr; Older posts', 'roots')); ?></li>
+          <li class="next"><?php previous_posts_link(__('Newer posts &rarr;', 'roots')); ?></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 <?php endif; ?>
