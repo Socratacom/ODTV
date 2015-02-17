@@ -1,9 +1,7 @@
 <!--<article <?php post_class(); ?>>
   <div class="entry-summary"> -->
 
-  <?php
-
-  $search = new WP_Query($search_query);
+<?php
 
     global $query_string;
 
@@ -13,11 +11,11 @@
     foreach($query_args as $key => $string) {
       $query_split = explode("=", $string);
       $search_query[$query_split[0]] = urldecode($query_split[1]);
-    } // foreach
+    }
 
-    //$loop = new WP_Query($search_query);
-    //if ( $loop->have_posts() ) :
-      //while ( $loop->have_posts() ) : $loop->the_post();
+    $search = new WP_Query($search_query);
+    if ( $search->have_posts() ) :
+      while ( $search->have_posts() ) : $search->the_post();
         $link = get_the_permalink();
         $title = get_the_title();
         $post_date = get_the_date();
@@ -60,8 +58,8 @@
                 </div>
               </a>
               </div>';
-      //endwhile;
-    //endif;
+      endwhile;
+    endif;
   ?>
 
 <!--  </div>

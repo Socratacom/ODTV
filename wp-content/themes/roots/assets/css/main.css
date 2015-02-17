@@ -7900,108 +7900,108 @@ p {
     width: 33.33333333%;
   }
 }
-footer {
+footer.bodyfooter {
   position: fixed;
   bottom: 0;
   z-index: -99;
   width: 100%;
   padding-top: 44px;
 }
-footer .row .col-md-4 {
+footer.bodyfooter .row .col-md-4 {
   padding-left: 30px;
   padding-right: 30px;
 }
-footer .row .col-md-4:first-of-type {
+footer.bodyfooter .row .col-md-4:first-of-type {
   padding-left: 15px;
   padding-right: 45px;
 }
-footer .row .col-md-4:last-of-type {
+footer.bodyfooter .row .col-md-4:last-of-type {
   padding-left: 45px;
   padding-right: 15px;
 }
-footer .social {
+footer.bodyfooter .social {
   background-image: url('../img/footer.jpg');
   -webkit-background-size: cover;
           background-size: cover;
   background-position: top center;
   height: 780px;
 }
-footer .social h4 {
+footer.bodyfooter .social h4 {
   font-size: 26px;
   font-weight: 300;
 }
-footer .social p {
+footer.bodyfooter .social p {
   font-size: 16px;
 }
-footer .social hr {
+footer.bodyfooter .social hr {
   opacity: 0.4;
 }
-footer .social .social-headline {
+footer.bodyfooter .social .social-headline {
   text-align: center;
   margin-top: 92px;
 }
-footer .social .social-headline h3 {
+footer.bodyfooter .social .social-headline h3 {
   font-size: 63px;
 }
-footer .social .social-subhead {
+footer.bodyfooter .social .social-subhead {
   text-align: center;
   margin-top: 37px;
 }
-footer .social .social-subhead p {
+footer.bodyfooter .social .social-subhead p {
   font-size: 24px;
   font-weight: 300;
 }
-footer .social .social-icons {
+footer.bodyfooter .social .social-icons {
   text-align: center;
   margin-top: 43px;
   height: 68px;
   margin-bottom: 33px;
 }
-footer .social .social-contribute .contribute-headline {
+footer.bodyfooter .social .social-contribute .contribute-headline {
   margin-top: 40px;
 }
-footer .social .social-contribute .contribute-body {
+footer.bodyfooter .social .social-contribute .contribute-body {
   margin-top: 19px;
   line-height: 1.45;
 }
-footer .social .social-contribute .contribute-button {
+footer.bodyfooter .social .social-contribute .contribute-button {
   margin-top: 20px;
 }
-footer .social .social-twitter .twitter-icon {
+footer.bodyfooter .social .social-twitter .twitter-icon {
   margin-top: 30px;
   font-size: 35px;
 }
-footer .social .social-twitter .twitter-body {
+footer.bodyfooter .social .social-twitter .twitter-body {
   margin-top: 5px;
   line-height: 1.6;
 }
-footer .social .social-twitter .twitter-author {
+footer.bodyfooter .social .social-twitter .twitter-author {
   margin-top: 20px;
 }
-footer .social .social-twitter .twitter-author p {
+footer.bodyfooter .social .social-twitter .twitter-author p {
   margin: 0;
   font-size: 18px;
   font-weight: 300;
 }
-footer .social .social-twitter .twitter-handle {
+footer.bodyfooter .social .social-twitter .twitter-handle {
   margin-top: 5px;
 }
-footer .social .social-twitter .twitter-handle p {
+footer.bodyfooter .social .social-twitter .twitter-handle p {
   margin: 0;
   font-size: 14px;
   font-weight: 300;
   font-style: italic;
 }
-footer .social .social-signup .signup-headline {
+footer.bodyfooter .social .social-signup .signup-headline {
   margin-top: 40px;
 }
-footer .social .social-signup .signup-body {
+footer.bodyfooter .social .social-signup .signup-body {
   margin-top: 18px;
 }
-footer .social .social-signup .signup-form {
+footer.bodyfooter .social .social-signup .signup-form {
   margin-top: 25px;
 }
-footer .social .gform_confirmation_message {
+footer.bodyfooter .social .gform_confirmation_message {
   margin: 1em 0 1em 0;
   padding: 1em 0;
   font-size: 1em;
@@ -8009,44 +8009,44 @@ footer .social .gform_confirmation_message {
   background: none;
   text-align: left;
 }
-footer .social .gform_wrapper .top_label .gfield_label {
+footer.bodyfooter .social .gform_wrapper .top_label .gfield_label {
   display: none;
 }
-footer .social .gform_wrapper .top_label .ginput_container input {
+footer.bodyfooter .social .gform_wrapper .top_label .ginput_container input {
   width: 100%;
 }
-footer .social .gform_footer {
+footer.bodyfooter .social .gform_footer {
   margin: 10px 0 0 0;
   padding: 0;
 }
-footer .subfooter {
+footer.bodyfooter .subfooter {
   border-top: 1px solid #8d0f11;
   height: 125px;
   padding-top: 50px;
 }
-footer .subfooter .presented {
+footer.bodyfooter .subfooter .presented {
   float: left;
   color: #575757;
   text-transform: uppercase;
 }
-footer .subfooter .presented img {
+footer.bodyfooter .subfooter .presented img {
   display: inline-block;
 }
-footer .subfooter ul {
+footer.bodyfooter .subfooter ul {
   display: inline-block;
 }
-footer .subfooter .copyright {
+footer.bodyfooter .subfooter .copyright {
   display: inline-block;
   color: #575757;
   text-transform: uppercase;
 }
-footer .subfooter a {
+footer.bodyfooter .subfooter a {
   color: #575757;
   text-decoration: underline;
   text-transform: uppercase;
 }
-footer .subfooter a:hover,
-footer .subfooter a:focus {
+footer.bodyfooter .subfooter a:hover,
+footer.bodyfooter .subfooter a:focus {
   color: #575757;
 }
 body {
@@ -8063,6 +8063,15 @@ section .section-header {
   margin-bottom: 30px;
   padding-bottom: 10px;
   border-bottom: 1px solid #575757;
+}
+.single-video .wrap {
+  background: #f4f4f4;
+  color: #171717;
+}
+.single-video h1,
+.single-video h2,
+.single-video p {
+  color: #171717;
 }
 .single-video .videoWrapper {
   position: relative;

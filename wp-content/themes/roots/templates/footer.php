@@ -1,4 +1,4 @@
-<footer class="content-info" role="contentinfo">
+<footer class="bodyfooter" role="contentinfo">
 
   <?php
     if (is_page('home') || is_search()) :

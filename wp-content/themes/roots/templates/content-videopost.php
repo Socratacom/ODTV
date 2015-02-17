@@ -87,7 +87,7 @@
           echo '<div class="speaker-title"><p>About our speaker</p></div>';
           echo '<div class="speaker-img">' . $featured_image . '</div>';
           echo '<div class="speaker-title"><a href="' . $link . '"><p>' . $speaker_name . '</p></a></div>';
-          echo '<div class="speaker-subtitle"><p>What he does</p></div>';
+          echo '<div class="speaker-subtitle"><p></p></div>';
           echo '<div class="speaker-description">' . $speaker_description . '</div>';
         ?>
 
