@@ -2316,11 +2316,6 @@ var Roots = {
     init: function() {
       // JavaScript to be fired on all pages
 
-      function loadAddThis() {
-        addthis.init();
-        addthis.toolbox('.addthis_toolbox');
-      }
-
       //Sticky nav function
       var stickyOffset = $('.sticky').offset().top;
       var navBar = $('.fixed');
@@ -2373,9 +2368,9 @@ var Roots = {
         }
       });
 
-      // Portfolio Modal
+      // Video Post Modal
       jQuery(document).ready(function($) {
-          var $modal = $('.portfolio-modal');
+          var $modal = $('.video-modal');
           var portfolio_url, portfolio_title;
 
           $('.videotile-link').on('click', function(e){
@@ -2383,9 +2378,6 @@ var Roots = {
 
               portfolio_url = $(this).attr('href');
               portfolio_title = $(this).attr('title');
-
-              //console.log(portfolio_url);
-              //console.log(portfolio_title);
 
               setTimeout(function(){
                   $modal.load('/wp-content/themes/roots/html-templates/video-modal.html', '', function(){
@@ -2408,7 +2400,10 @@ var Roots = {
               }, 0);
 
           });
+      });
 
+      $('.video-modal').on('hidden.bs.modal', function () {
+        $(this).find('.modal-dialog').remove();
       });
 
     }

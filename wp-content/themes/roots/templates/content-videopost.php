@@ -38,14 +38,6 @@
         </div>
         <div class="statsContainer-stats">
           <div class="stats-number">
-            <p>56</p>
-          </div>
-          <div class="stats-label">
-            <p>likes</p>
-          </div>
-        </div>
-        <div class="statsContainer-stats">
-          <div class="stats-number">
             <p><?php comments_number( '0', '1', '%' ); ?></p>
           </div>
           <div class="stats-label">

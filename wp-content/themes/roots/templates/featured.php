@@ -33,6 +33,10 @@
         $featured_image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full' );
         $featured_image = $featured_image[0];
 
+        // field type post object
+        $speaker = get_field('speaker');
+        $speaker_name = $speaker->post_title;
+
         echo '<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">';
         echo '<a href="' . $link . '" title="' . $title . '" class="videotile-link" data-backdrop="static">
                 <div class="videotile">
@@ -47,7 +51,7 @@
                     </div>
                     <div class="content-text">';
         echo          '<div class="text-title"><p>' . $title . '</p></div>';
-        echo          '<div class="text-postdate"><p>' . $post_date . '</p></div>
+        echo          '<div class="text-postdate"><p>' . $speaker_name . '</p></div>
                     </div>
                   </div>
                   <div class="videotile-overlay clearfix">

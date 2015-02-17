@@ -90,5 +90,5 @@
 </footer>
 
 
-<div class="portfolio-modal modal fade" tabindex="-1">
+<div class="video-modal modal fade" tabindex="-1">
 </div>
