@@ -47,7 +47,9 @@
                 <i class="icon-twitter"></i>
               </div>
               <div class="twitter-body">
-                <p>"@socrata thanks soooo much for inviting me to your AMAZING conference! Have learned so much and met some brilliant people. #SCS2014"</p>
+                <?php
+                   echo do_shortcode('[widget id="pi_tweet_scroll-2"]');
+                 ?>
               </div>
               <div class="twitter-author">
                 <p>Sam Mowbray</p>

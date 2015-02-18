@@ -9,32 +9,45 @@
 
       <script>
 
-            var player;
-            function onYouTubePlayerAPIReady() {
-                player = new YT.Player('player', {
-                  height: '390',
-                  width: '640',
-                  videoId: 'ScMzIvxBSi4',
-                  playerVars: {rel: 0},
-                  events: {
-                    'onReady': onPlayerReady,
-                    'onStateChange': onPlayerStateChange
-                  }
-                });
-            }
+      var tag = document.createElement('script');
+      tag.src = "//www.youtube.com/player_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-            function onPlayerReady(event) {
-                //event.target.playVideo();
+      var player;
+      function onYouTubePlayerAPIReady() {
+          player = new YT.Player('player', {
+            height: '390',
+            width: '640',
+            videoId: 'ScMzIvxBSi4',
+            playerVars: {rel: 0},
+            events: {
+              'onReady': onPlayerReady,
+              'onStateChange': onPlayerStateChange
             }
+          });
+      }
 
-            function onPlayerStateChange(event) {
-              if(event.data === 0) {
-                $('.videoWrapper').removeClass('visible');
-                $('.videoWrapper').addClass('hidden');
-                $('.contentWrapper').removeClass('hidden');
-                $('.contentWrapper').addClass('visible');
-              }
-            }
+      function onPlayerReady(event) {
+          //event.target.playVideo();
+      }
+
+      function onPlayerStateChange(event) {
+        if(event.data === 0) {
+          $('.videoWrapper').removeClass('visible');
+          $('.videoWrapper').addClass('hidden');
+          $('.contentWrapper').removeClass('hidden');
+          $('.contentWrapper').addClass('visible');
+        }
+      }
+
+      $('.playbutton').click(function() {
+        $('.videoWrapper').removeClass('hidden');
+        $('.videoWrapper').addClass('visible');
+        $('.contentWrapper').removeClass('visible');
+        $('.contentWrapper').addClass('hidden');
+        player.playVideo();
+      });
 
       </script>
     </div>

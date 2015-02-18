@@ -37,9 +37,6 @@ function roots_scripts() {
     );
   }
 
-  wp_register_script('youtube_api', '//www.youtube.com/iframe_api', array(), null, false);
-  wp_enqueue_script('youtube_api');
-
   wp_register_script('addthis', '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4e590fc12e22e79e#async=1', array(), null, false);
   wp_enqueue_script('addthis');
 

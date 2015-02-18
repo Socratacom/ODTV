@@ -7345,7 +7345,7 @@ p {
   background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
   opacity: 0;
-  font-size: 40px;
+  font-size: 60px;
   color: #c1c1c1;
   -webkit-transition: opacity 0.5s;
   -o-transition: opacity 0.5s;
@@ -7709,10 +7709,13 @@ p {
 .hero-container .playbutton:hover {
   text-decoration: none;
 }
+.hero-container .hero-logo {
+  top: 40px;
+}
 @media (min-width: 768px) {
   .hero-container .hero-logo {
     position: absolute;
-    top: 10px;
+    top: 50px;
   }
 }
 .hero-container .hero-logo img {
@@ -8135,7 +8138,7 @@ footer.bodyfooter .social hr {
 }
 @media (min-width: 1600px) {
   footer.bodyfooter .social {
-    height: 780px;
+    height: 700px;
   }
   footer.bodyfooter .social h4 {
     font-size: 26px;
@@ -8283,6 +8286,12 @@ footer.bodyfooter .social .social-contribute .contribute-button {
     margin-top: 40px;
   }
 }
+footer.bodyfooter .social .social-twitter .widgettitle {
+  display: none;
+}
+footer.bodyfooter .social .social-twitter a {
+  color: #171717;
+}
 footer.bodyfooter .social .social-twitter .twitter-icon {
   margin-top: 30px;
   font-size: 35px;
@@ -8378,7 +8387,7 @@ footer.bodyfooter .social .gform_footer {
 footer.bodyfooter .subfooter {
   border-top: 1px solid #8d0f11;
   height: 125px;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 @media (min-width: 768px) {
   footer.bodyfooter .subfooter {
@@ -8405,7 +8414,7 @@ footer.bodyfooter .subfooter .subfooter-presented img {
   display: inline-block;
 }
 @media (min-width: 768px) {
-  footer.bodyfooter .subfooter .subfooter-presented {
+  footer.bodyfooter .subfooter .subfooter-copyright {
     float: right;
   }
 }
