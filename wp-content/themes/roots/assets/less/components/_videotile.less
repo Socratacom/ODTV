@@ -147,10 +147,13 @@
 }
 
 .videotile:hover .videotile-overlay {
-  pointer-events: auto;
-  opacity: 1;
-  -webkit-transform: translate3d(0,0,0) rotate3d(0,0,0,0);
-  transform: translate3d(0,0,0) rotate3d(0,0,0,0);
+
+  @media (min-width: @screen-sm-min) {
+    pointer-events: auto;
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0) rotate3d(0,0,0,0);
+    transform: translate3d(0,0,0) rotate3d(0,0,0,0);
+  }
 }
 
 /* Arrow */
