@@ -56,9 +56,11 @@ var Roots = {
       });
 
       $('.playbutton').click(function() {
+        $('.videoWrapper').removeClass('hidden');
         $('.videoWrapper').addClass('visible');
-        player.playVideo();
+        $('.contentWrapper').removeClass('visible');
         $('.contentWrapper').addClass('hidden');
+        player.playVideo();
       });
 
       //smooth scroll to anchor

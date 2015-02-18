@@ -47,7 +47,7 @@
             <div class="hero-container">
 
               <div class="hero-logo">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/odtv-logo-hero.png">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/odtv-logo-hero.png" alt="logo">
               </div>
 
               <div class="content-play">

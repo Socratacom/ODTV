@@ -1,25 +1,32 @@
 footer.bodyfooter {
-  position: fixed;
-  bottom: 0;
-  z-index: -99;
-  width: 100%;
-  padding-top: 44px;
+
+  @media (min-width: @screen-sm-min) {
+    position: fixed;
+    bottom: 0;
+    z-index: -99;
+    width: 100%;
+    padding-top: 44px;
+  }
 
   .row {
     .col-md-4 {
 
-      &:first-of-type {
-        padding-left: 15px;
-        padding-right: 45px;
-      }
+      @media (min-width: @screen-sm-min) {
 
-      padding-left: 30px;
-      padding-right: 30px;
+        &:first-of-type {
+          padding-left: 15px;
+          padding-right: 45px;
+        }
+
+        padding-left: 30px;
+        padding-right: 30px;
 
 
-      &:last-of-type {
-        padding-left: 45px;
-        padding-right: 15px;
+        &:last-of-type {
+          padding-left: 45px;
+          padding-right: 15px;
+        }
+
       }
 
     }
@@ -29,50 +36,177 @@ footer.bodyfooter {
     background-image: url('../img/footer.jpg');
     background-size: cover;
     background-position: top center;
-    height: 780px;
+    height: auto;
 
     h4 {
-      font-size: 26px;
+      font-size: 20px;
       font-weight: 300;
     }
 
     p {
-      font-size: 16px;
+      font-size: 14px;
     }
 
     hr {
       opacity: 0.4;
     }
 
+    @media (min-width: @screen-sm-min) {
+      height: 540px;
+
+      h4 {
+        font-size: 20px;
+        font-weight: 300;
+      }
+    }
+
+    @media (min-width: @screen-md-min) {
+      height: 540px;
+
+      h4 {
+        font-size: 22px;
+        font-weight: 300;
+      }
+    }
+
+    @media (min-width: @screen-lg-min) {
+      height: 540px;
+
+      h4 {
+        font-size: 22px;
+        font-weight: 300;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    @media (min-width: @screen-xl-min) {
+      height: 780px;
+
+      h4 {
+        font-size: 26px;
+        font-weight: 300;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+
     .social-headline {
       text-align: center;
+      margin-top: 30px;
+
+      h3 {
+        font-size: 33px;
+      }
+
+      @media (min-width: @screen-sm-min) {
+      margin-top: 35px;
+
+      h3 {
+        font-size: 33px;
+        }
+      }
+
+      @media (min-width: @screen-md-min) {
+      margin-top: 35px;
+
+      h3 {
+        font-size: 43px;
+        }
+      }
+
+      @media (min-width: @screen-lg-min) {
+      margin-top: 35px;
+
+      h3 {
+        font-size: 43px;
+        }
+      }
+
+      @media (min-width: @screen-xl-min) {
       margin-top: 92px;
 
       h3 {
         font-size: 63px;
+        }
       }
     }
 
     .social-subhead {
       text-align: center;
-      margin-top: 37px;
+      margin-top: 15px;
 
       p {
-        font-size: 24px;
+        font-size: 16px;
         font-weight: 300;
+      }
+
+      @media (min-width: @screen-sm-min) {
+        margin-top: 15px;
+
+        p {
+          font-size: 16px;
+        }
+      }
+
+      @media (min-width: @screen-md-min) {
+        margin-top: 20px;
+
+        p {
+          font-size: 16px;
+        }
+      }
+
+      @media (min-width: @screen-lg-min) {
+        margin-top: 20px;
+
+        p {
+          font-size: 20px;
+        }
+      }
+
+      @media (min-width: @screen-xl-min) {
+        margin-top: 37px;
+
+        p {
+          font-size: 24px;
+        }
       }
     }
 
     .social-icons {
       text-align: center;
-      margin-top: 43px;
-      height: 68px;
-      margin-bottom: 33px;
+      margin-top: 20px;
+      margin-bottom: 15px;
+
+      @media (min-width: @screen-sm-min) {
+        margin-top: 20px;
+        margin-bottom: 15px;
+      }
+
+      @media (min-width: @screen-md-min) {
+        margin-top: 20px;
+        margin-bottom: 15px;
+      }
+
+      @media (min-width: @screen-lg-min) {
+        margin-top: 30px;
+        margin-bottom: 20px;
+      }
+
+      @media (min-width: @screen-xl-min) {
+        margin-top: 43px;
+        margin-bottom: 33px;
+      }
     }
 
     .social-contribute {
       .contribute-headline {
-        margin-top: 40px;
+        margin-top: 20px;
       }
 
       .contribute-body {
@@ -82,6 +216,30 @@ footer.bodyfooter {
 
       .contribute-button {
         margin-top: 20px;
+      }
+
+      @media (min-width: @screen-sm-min) {
+        .contribute-headline {
+          margin-top: 20px;
+        }
+      }
+
+      @media (min-width: @screen-md-min) {
+        .contribute-headline {
+          margin-top: 20px;
+        }
+      }
+
+      @media (min-width: @screen-lg-min) {
+        .contribute-headline {
+          margin-top: 20px;
+        }
+      }
+
+      @media (min-width: @screen-xl-min) {
+        .contribute-headline {
+          margin-top: 40px;
+        }
       }
     }
 
@@ -114,11 +272,36 @@ footer.bodyfooter {
           font-style: italic;
         }
       }
+
+
+      @media (min-width: @screen-sm-min) {
+        .twitter-icon {
+          margin-top: 10px;
+        }
+      }
+
+      @media (min-width: @screen-md-min) {
+       .twitter-icon {
+          margin-top: 10px;
+        }
+      }
+
+      @media (min-width: @screen-lg-min) {
+        .twitter-icon {
+          margin-top: 10px;
+        }
+      }
+
+      @media (min-width: @screen-xl-min) {
+        .twitter-icon {
+          margin-top: 30px;
+        }
+      }
     }
 
     .social-signup {
       .signup-headline {
-        margin-top: 40px;
+        margin-top: 20px;
       }
 
       .signup-body {
@@ -127,6 +310,30 @@ footer.bodyfooter {
 
       .signup-form {
         margin-top: 25px;
+      }
+
+      @media (min-width: @screen-sm-min) {
+        .signup-headline {
+          margin-top: 20px;
+        }
+      }
+
+      @media (min-width: @screen-md-min) {
+       .signup-headline {
+          margin-top: 20px;
+        }
+      }
+
+      @media (min-width: @screen-lg-min) {
+        .signup-headline {
+          margin-top: 20px;
+        }
+      }
+
+      @media (min-width: @screen-xl-min) {
+        .signup-headline {
+          margin-top: 40px;
+        }
       }
     }
 
@@ -164,13 +371,33 @@ footer.bodyfooter {
     height: 125px;
     padding-top: 50px;
 
-    .presented {
-      float: left;
+    @media (min-width: @screen-sm-min) {
+      height: 75px;
+      padding-top: 25px;
+    }
+
+    @media (min-width: @screen-xl-min) {
+      height: 125px;
+      padding-top: 50px;
+    }
+
+    .subfooter-presented {
+
       color: @med-gray;
       text-transform: uppercase;
 
+      @media (min-width: @screen-sm-min) {
+        float: left;
+      }
+
       img {
         display: inline-block;
+      }
+    }
+
+    .subfooter-presented {
+      @media (min-width: @screen-sm-min) {
+        float: right;
       }
     }
 

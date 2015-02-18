@@ -6,5 +6,16 @@ body {
 
 .wrap {
   background: @odtv-black;
-  margin-bottom: 900px;
+
+  @media (min-width: @screen-sm-min) {
+    margin-bottom: 710px;
+  }
+
+  @media (min-width: @screen-lg-min) {
+    margin-bottom: 710px;
+  }
+
+  @media (min-width: @screen-xl-min) {
+    margin-bottom: 900px;
+  }
 }

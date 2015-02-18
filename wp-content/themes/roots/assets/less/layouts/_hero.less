@@ -2,17 +2,25 @@
 
 .hero {
   position: relative;
-  height:100vh;
+  height: auto;
   background-image: url('../img/hero_bg.jpg');
   background-size: cover;
+
+  @media (min-width: @screen-sm-min) {
+    height:100vh;
+  }
 
   .videoWrapper {
     position: relative;
     padding-top: 25px;
-    height: 100vh;
+    height: 400px;
     display: none;
     opacity: 0.0;
     .transition(opacity, 0.5s);
+
+    @media (min-width: @screen-sm-min) {
+      height:100vh;
+    }
 
     &.visible {
       display: block;
@@ -36,9 +44,12 @@
 }
 
 .hero-container {
-  height:100vh;
-  min-height: 600px;
-  position: relative;
+
+  @media (min-width: @screen-sm-min) {
+    height:100vh;
+    min-height: 600px;
+    position: relative;
+  }
 
   .playbutton {
     color: darken(@odtv-white, 20%);
@@ -49,40 +60,75 @@
   }
 
   .hero-logo {
-    position: absolute;
-    top: 100px;
+    @media (min-width: @screen-sm-min) {
+      position: absolute;
+      top: 10px;
+    }
+
+    img {
+      height: 70px;
+
+      @media (min-width: @screen-sm-min) {
+        height: auto;
+      }
+    }
   }
 
   .content-play {
+    margin: 40px 0;
+    text-align: center;
+
+    @media (min-width: @screen-sm-min) {
       position:absolute;
       top: 40%;
       left: 50%;
+      z-index: 999;
+      margin: 0;
+      text-align: left;
+    }
 
-      .playbutton {
+    .playbutton {
+      i {
+        font-size: 60px;
+        opacity: 0.4;
 
-        i {
-          font-size:120px;
-          opacity: 0.4;
+        @media (min-width: @screen-sm-min) {
+          font-size: 120px;
+        }
 
-          .transition(opacity, 0.5s);
+        .transition(opacity, 0.5s);
 
-          &:hover {
-            opacity: 0.8;
-          }
+        &:hover {
+          opacity: 0.8;
         }
       }
     }
+  }
 
   .hero-content {
-    position: absolute;
-    bottom: 100px;
-    width: 100%;
+    @media (min-width: @screen-sm-min) {
+      position: absolute;
+      bottom: 100px;
+      width: 100%;
+    }
 
     .content-text {
       .text-headline {
         h1 {
           margin: 10px 0;
-          max-width: @heroTextContainerWidth;
+          max-width: 100%;
+
+          @media (min-width: @screen-sm-min) {
+            max-width: @heroTextContainerWidth - 20;
+          }
+
+          @media (min-width: @screen-lg-min) {
+            max-width: @heroTextContainerWidth - 10;
+          }
+
+          @media (min-width: @screen-xl-min) {
+            max-width: @heroTextContainerWidth;
+          }
         }
       }
 
@@ -92,27 +138,73 @@
 
         p {
           margin: 0 0 10px 0;
-          max-width: @heroTextContainerWidth;
+          max-width: 100%;
+
+          @media (min-width: @screen-sm-min) {
+            max-width: @heroTextContainerWidth - 20;
+          }
 
           @media (min-width: @screen-lg-min) {
+            max-width: @heroTextContainerWidth - 10;
             font-size: 20px;
+          }
+
+          @media (min-width: @screen-xl-min) {
+            max-width: @heroTextContainerWidth;
           }
         }
       }
     }
 
     .content-buttons {
-      float: left;
       margin-top: 15px;
 
+      @media (min-width: @screen-sm-min) {
+        float: left;
+      }
+
+      a {
+        display: block;
+        margin-right: 0;
+
+        @media (min-width: @screen-sm-min) {
+          display: inline-block;
+          margin-right: 15px;
+        }
+      }
+
       .btn-secondary {
-        margin-top: 25px;
+        margin-top: 10px;
+
+        @media (min-width: @screen-sm-min) {
+          margin-top: 15px;
+        }
+
+        @media (min-width: @screen-lg-min) {
+          margin-top: 25px;
+        }
+
+        @media (min-width: @screen-xl-min) {
+          margin-top: 25px;
+        }
       }
     }
 
     .content-search {
-      float: right;
-      margin-top: 38px;
+      margin-top: 10px;
+
+      @media (min-width: @screen-sm-min) {
+        float: right;
+        margin-top: 28px;
+      }
+
+      @media (min-width: @screen-lg-min) {
+        margin-top: 38px;
+      }
+
+      @media (min-width: @screen-xl-min) {
+        margin-top: 38px;
+      }
 
       .left-inner-addon {
         position: relative;
@@ -129,16 +221,47 @@
         z-index: 99;
         font-size: 20px;
         color: darken(@odtv-white, 20%);
+
+        @media (min-width: @screen-sm-min) {
+          padding: 8px 12px;
+        }
+
+        @media (min-width: @screen-lg-min) {
+          padding: 14px 12px;
+        }
+
+        @media (min-width: @screen-xl-min) {
+          padding: 14px 12px;
+        }
       }
 
       form {
+        .input-group {
+          width: 100%;
+        }
+
         input {
-          width: 300px;
+          width: 100%;
           height: 48px;
           background-color: @med-gray;
           border: none;
           border-radius: 0px;
           color: darken(@odtv-white, 20%);
+
+          @media (min-width: @screen-sm-min) {
+            width: 220px;
+            height: 34px;
+          }
+
+          @media (min-width: @screen-lg-min) {
+            width: 300px;
+            height: 48px;
+          }
+
+          @media (min-width: @screen-xl-min) {
+            width: 300px;
+            height: 48px;
+          }
 
           &:hover,
           &:focus {

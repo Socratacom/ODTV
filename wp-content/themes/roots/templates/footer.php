@@ -28,7 +28,7 @@
         </div>
         <hr>
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-sm-4 col-md-4">
             <div class="social-contribute">
               <div class="contribute-headline">
                 <h4>Contribute</h4>
@@ -41,7 +41,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-sm-4 col-md-4">
             <div class="social-twitter">
               <div class="twitter-icon">
                 <i class="icon-twitter"></i>
@@ -57,13 +57,13 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-sm-4 col-md-4">
             <div class="social-signup">
               <div class="signup-headline">
-                <h4>Stay in the know</h4>
+                <h4>Join the Movement</h4>
               </div>
               <div class="signup-body">
-                <p>Receive occasional news on open data.</p>
+                <p>Stay informed on the latest in open data. Subscribe to our monthly newsletter today!</p>
               </div>
               <div class="signup-form">
                 <?php echo do_shortcode('[gravityform id="1" title="false" description="false" ajax="true"]'); ?>
@@ -82,10 +82,10 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="presented">
+          <div class="subfooter-presented">
             Open Data Tv is Presented By: <a href="http://www.socrata.com" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/socrata-logo.png" class="img-responsive"></a>
           </div>
-          <div class="pull-right">
+          <div class="subfooter-copyright">
             <?php wp_nav_menu(array('theme_location' => 'footer_navigation', 'items_wrap' => '<ul id="%1$s" class="%2$s list-inline">%3$s</ul>', 'menu_class' => 'footer')); ?>
             <div class="copyright">Copyright <?php echo date('Y'); ?> Open Data TV</div>
           </div>
