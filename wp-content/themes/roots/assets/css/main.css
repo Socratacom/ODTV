@@ -6927,7 +6927,7 @@ button.close {
 }
 .btn.btn-search,
 .comment-form input[type="submit"].btn-search {
-  padding: 9px 10px;
+  padding: 8px 10px;
 }
 .comment-list ol {
   list-style: none;
@@ -7085,7 +7085,7 @@ fieldset[disabled] .gform_button {
   }
 }
 .gform_button.btn-search {
-  padding: 9px 10px;
+  padding: 8px 10px;
 }
 .gform_button:hover,
 .gform_button:focus,
@@ -7544,6 +7544,10 @@ p {
   display: inline-block;
   margin-right: -4px;
 }
+.single .at4-icon,
+.banner .at4-icon {
+  background-color: #575757 !important;
+}
 .video-modal {
   color: #171717;
 }
@@ -7838,7 +7842,7 @@ p {
 .banner .nav-buttons {
   float: left;
   margin-top: 50px;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 .banner .nav-buttons .btn,
 .banner .nav-buttons .comment-form input[type="submit"] {
@@ -7857,6 +7861,7 @@ p {
   display: none;
 }
 .banner .nav-search form #search {
+  height: 32px;
   width: 0px;
   padding: 0px;
   -webkit-transition: all 0.5s;
@@ -7869,7 +7874,7 @@ p {
 }
 .banner .nav-search form button {
   display: none;
-  padding: 9px 10px;
+  padding: 8px 10px;
 }
 .banner .nav-right {
   float: right;
