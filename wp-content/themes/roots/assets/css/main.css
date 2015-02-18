@@ -7983,6 +7983,9 @@ p {
 .banner .container {
   position: relative;
 }
+.banner .navbar-toggle {
+  display: none;
+}
 .banner .navbar-collapse,
 .banner .navbar-form {
   background-color: #171717;
