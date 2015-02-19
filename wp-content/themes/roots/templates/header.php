@@ -10,9 +10,11 @@
     </div>
 
     <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/odtv-logo.png"></a>
+
     <div class="nav-buttons">
       <a href="#featured" class="btn btn-default btn-sm">Featured</a>
       <a href="#recent" class="btn btn-default btn-sm">Recent</a>
+      <a href="http://www.socrata.com/open-data-field-guide-chapter/about/?utm_source=odtv&utm_medium=organic&utm_content=cta&utm_campaign=open-data-field-guide" class="btn btn-default">What is Open Data</a>
     </div>
 
     <div class="nav-search">
@@ -35,7 +37,7 @@
 
     <div class="nav-right">
       <div class="nav-cta">
-        <a href="http://www.socrata.com/open-data-field-guide-chapter/about/?utm_source=odtv&utm_medium=organic&utm_content=cta&utm_campaign=open-data-field-guide" class=""></a>
+
       </div>
       <div class="nav-social">
         <div class="social-label">Share ODTV:</div>

@@ -1,5 +1,9 @@
 <section>
   <div class="hero">
+    <video id="bgvid" preload autoplay loop poster="<?php echo get_template_directory_uri(); ?>/assets/img/hero_bg.jpg">
+      <source src="<?php echo get_template_directory_uri(); ?>/assets/video/hero-loop.webm" type="video/webm">
+      <source src="<?php echo get_template_directory_uri(); ?>/assets/video/hero-loop.mp4" type="video/mp4">
+    </video>
     <div class="videoWrapper">
       <!--<iframe id="videoWrapper-video" width="560" height="349" src="" frameborder="0" allowfullscreen></iframe>-->
 
@@ -20,7 +24,13 @@
             height: '390',
             width: '640',
             videoId: 'ScMzIvxBSi4',
-            playerVars: {rel: 0},
+            playerVars: {
+              'autoplay': 0,
+              'controls': 0,
+              'rel' : 0,
+              'html5' : 1,
+              'showinfo' : 0
+            },
             events: {
               'onReady': onPlayerReady,
               'onStateChange': onPlayerStateChange
@@ -85,17 +95,7 @@
                 </div>
 
                 <div class="content-search">
-                  <form role="search" method="get" class="search-form form-inline" action="<?php echo esc_url(home_url('/')); ?>">
-                    <label class="sr-only"><?php _e('Search for:', 'roots'); ?></label>
-                    <div class="input-group left-inner-addon">
-                      <i class="icon-search"></i>
-                      <input class="filter__search js-shuffle-search" type="search" placeholder="Search...">
-                      <span class="input-group-btn">
-                        <button type="submit" class="search-submit btn btn-default icon-search">
-                        </button>
-                      </span>
-                    </div>
-                  </form>
+                  <?php get_search_form( $echo ); ?>
                 </div>
 
               </div>

@@ -7299,13 +7299,13 @@ body {
   letter-spacing: 0.05em;
 }
 h1 {
-  font-size: 42px;
+  font-size: 32px;
   font-weight: 400;
   color: #f4f4f4;
 }
 @media (min-width: 1200px) {
   h1 {
-    font-size: 52px;
+    font-size: 42px;
   }
 }
 h2 {
@@ -7678,7 +7678,7 @@ p {
 .hero {
   position: relative;
   height: auto;
-  background-image: url('../img/hero_bg.jpg');
+  background-color: #171717;
   -webkit-background-size: cover;
           background-size: cover;
 }
@@ -7686,6 +7686,18 @@ p {
   .hero {
     height: 100vh;
   }
+}
+.hero video#bgvid {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  background: url('../img/hero_bg.jpg') no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
 }
 .hero .videoWrapper {
   position: relative;
@@ -7788,7 +7800,7 @@ p {
 }
 @media (min-width: 768px) {
   .hero-container .hero-content .content-text .text-headline h1 {
-    max-width: 40%;
+    max-width: 50%;
   }
 }
 @media (min-width: 1200px) {
@@ -7811,7 +7823,7 @@ p {
 }
 @media (min-width: 768px) {
   .hero-container .hero-content .content-text .text-subtext p {
-    max-width: 40%;
+    max-width: 50%;
   }
 }
 @media (min-width: 1200px) {
@@ -8486,6 +8498,10 @@ section .section-header {
   margin-bottom: 30px;
   padding-bottom: 10px;
   border-bottom: 1px solid #575757;
+}
+section.section-results {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .single-video .wrap {
   background: #f4f4f4;
