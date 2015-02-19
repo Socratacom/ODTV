@@ -52,10 +52,10 @@
                  ?>
               </div>
               <div class="twitter-author">
-                <p>Sam Mowbray</p>
+                <p>Socrata Team</p>
               </div>
               <div class="twitter-handle">
-                <p>@sammymoggas</p>
+                <p>@socrata</p>
               </div>
             </div>
           </div>
