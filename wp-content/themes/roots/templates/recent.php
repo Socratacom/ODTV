@@ -42,23 +42,20 @@
         echo           '<img src="' . $featured_image . '" class="img-responsive" alt="' . $title . '">
                       </div>
                       <div class="img-overlay">
-                        <i class="icon-play"></i>
+                        <div class="overlay-text">';
+            echo          '<div class="text-excerpt"><p>' . $post_excerpt . '</p></div>
+                           <div class="text-icons">
+                            <ul class="list list-inline">';
+            echo              '<li><i class="icon-clock"></i> ' . $post_runtime . '<li>';
+            echo              '<li><i class="icon-eye"></i> ' . do_shortcode($post_views) . '<li>
+                            </ul>
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <div class="content-text">';
         echo          '<div class="text-title"><p>' . $title . '</p></div>';
         echo          '<div class="text-postdate"><p>' . $speaker_name . '</p></div>
-                    </div>
-                  </div>
-                  <div class="videotile-overlay clearfix">
-                    <div class="overlay-text">';
-        echo          '<div class="text-excerpt"><p>' . $post_excerpt . '</p></div>
-                      <div class="text-icons">
-                        <ul class="list list-inline">';
-        echo              '<li><i class="icon-clock"></i> ' . $post_runtime . '<li>';
-        echo              '<li><i class="icon-eye"></i> ' . do_shortcode($post_views) . '<li>
-                        </ul>
-                      </div>
                     </div>
                   </div>
                 </div>

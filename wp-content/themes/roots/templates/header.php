@@ -34,6 +34,9 @@
     </div>
 
     <div class="nav-right">
+      <div class="nav-cta">
+        <a href="http://www.socrata.com/open-data-field-guide-chapter/about/?utm_source=odtv&utm_medium=organic&utm_content=cta&utm_campaign=open-data-field-guide" class=""></a>
+      </div>
       <div class="nav-social">
         <div class="social-label">Share ODTV:</div>
         <div class="social-icons">
