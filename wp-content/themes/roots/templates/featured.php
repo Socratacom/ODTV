@@ -36,7 +36,7 @@
         $speaker = get_field('speaker');
         $speaker_name = $speaker->post_title;
 
-        echo '<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 item">';
+        echo '<div class="item">';
         echo '<a href="' . $link . '" title="' . $title . '" class="videotile-link" data-backdrop="static">
                 <div class="videotile">
                   <div class="videotile-content">

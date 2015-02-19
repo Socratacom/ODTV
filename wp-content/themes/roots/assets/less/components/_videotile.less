@@ -1,14 +1,68 @@
+@videotilesize-xs: 400px;
+@videotilesize-sm: 375px;
+@videotilesize-md: 323px;
+@videotilesize-lg: 390px;
+@videotilesize-xl: 392px;
+
 .videotile {
   margin: 0 0 30px 0;
   display: inline-block;
   position: relative;
-  z-index: 999;
+  padding: 0 15px;
 
   &:hover {
     .videotile-content {
       .content-img {
         .img-overlay {
           opacity: 1.0;
+        }
+      }
+    }
+  }
+
+  @media (min-width: @screen-sm-min) {
+    width: @videotilesize-sm;
+    .videotile-content {
+      .content-img {
+        .img-container {
+          width: @videotilesize-sm - 30;
+          max-width: @videotilesize-sm - 30;
+        }
+      }
+    }
+  }
+
+  @media (min-width: @screen-md-min) {
+    width: @videotilesize-md;
+    .videotile-content {
+      .content-img {
+        .img-container {
+          width: @videotilesize-md - 30;
+          max-width: @videotilesize-md - 30;
+        }
+      }
+    }
+  }
+
+  @media (min-width: @screen-lg-min) {
+    width: @videotilesize-lg;
+    .videotile-content {
+      .content-img {
+        .img-container {
+          width: @videotilesize-lg - 30;
+          max-width: @videotilesize-lg - 30;
+        }
+      }
+    }
+  }
+
+  @media (min-width: @screen-xl-min) {
+    width: @videotilesize-xl;
+    .videotile-content {
+      .content-img {
+        .img-container {
+          width: @videotilesize-xl - 30;
+          max-width: @videotilesize-xl - 30;
         }
       }
     }
@@ -27,6 +81,7 @@
 
     .img-container {
       position: relative;
+      max-width: @videotilesize-xs;
 
       .container-icon {
         position: absolute;
