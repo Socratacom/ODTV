@@ -7961,6 +7961,9 @@ p {
     width: 66.66666667%;
   }
 }
+#vid_grid {
+  min-height: 400px !important;
+}
 .banner {
   background-color: #171717;
   border-color: #171717;

@@ -1,7 +1,3 @@
-<section>
-  <a name="recent"></a>
-  <h2 class="section-header">Recent</h2>
-
   <?php
     $page_slug = $post->post_name;
 
@@ -21,7 +17,6 @@
 
     $loop = new WP_Query( $args );
     if ( $loop->have_posts() ) :
-      echo '<div class="row">';
       while ( $loop->have_posts() ) : $loop->the_post();
         $link = get_the_permalink();
         $title = get_the_title();
@@ -38,7 +33,7 @@
         $speaker = get_field('speaker');
         $speaker_name = $speaker->post_title;
 
-        echo '<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">';
+        echo '<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 item">';
         echo '<a href="' . $link . '" title="' . $title . '" class="videotile-link" data-backdrop="static">
                 <div class="videotile">
                   <div class="videotile-content">

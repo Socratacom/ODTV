@@ -24,6 +24,29 @@ var Roots = {
     init: function() {
       // JavaScript to be fired on all pages
 
+
+
+      var vid_grid = $('#vid_grid');
+      vid_grid.shuffle({
+        itemSelector: '.item'
+      });
+
+      // Advanced filtering
+      $('.js-shuffle-search').on('keyup change', function() {
+        var val = this.value.toLowerCase();
+        vid_grid.shuffle('shuffle', function($el, shuffle) {
+
+          // Only search elements in the current group
+          // if (shuffle.group !== 'all' && $.inArray(shuffle.group, $el.data('groups')) === -1) {
+          //   return false;
+          // }
+
+          var text = $.trim( $el.find('.videotile').text() ).toLowerCase();
+          return text.indexOf(val) !== -1;
+        });
+      });
+
+
       //Sticky nav function
       var stickyOffset = $('.sticky').offset().top;
       var navBar = $('.fixed');
