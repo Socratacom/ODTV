@@ -1,8 +1,13 @@
-@videotilesize-xs: 400px;
-@videotilesize-sm: 375px;
-@videotilesize-md: 323px;
-@videotilesize-lg: 390px;
-@videotilesize-xl: 392px;
+@videotilewidth-xs: 400px;
+@videotileheight-xs: 400px;
+@videotilewidth-sm: 375px;
+@videotileheight-sm: 194px;
+@videotilewidth-md: 323px;
+@videotileheight-md: 165px;
+@videotilewidth-lg: 390px;
+@videotileheight-lg: 203px;
+@videotilewidth-xl: 392px;
+@videotileheight-xl: 204px;
 
 .videotile {
   margin: 0 0 30px 0;
@@ -21,48 +26,52 @@
   }
 
   @media (min-width: @screen-sm-min) {
-    width: @videotilesize-sm;
+    width: @videotilewidth-sm;
     .videotile-content {
       .content-img {
         .img-container {
-          width: @videotilesize-sm - 30;
-          max-width: @videotilesize-sm - 30;
+          width: @videotilewidth-sm - 30;
+          max-width: @videotilewidth-sm - 30;
+          height: @videotileheight-sm;
         }
       }
     }
   }
 
   @media (min-width: @screen-md-min) {
-    width: @videotilesize-md;
+    width: @videotilewidth-md;
     .videotile-content {
       .content-img {
         .img-container {
-          width: @videotilesize-md - 30;
-          max-width: @videotilesize-md - 30;
+          width: @videotilewidth-md - 30;
+          max-width: @videotilewidth-md - 30;
+          height: @videotileheight-md;
         }
       }
     }
   }
 
   @media (min-width: @screen-lg-min) {
-    width: @videotilesize-lg;
+    width: @videotilewidth-lg;
     .videotile-content {
       .content-img {
         .img-container {
-          width: @videotilesize-lg - 30;
-          max-width: @videotilesize-lg - 30;
+          width: @videotilewidth-lg - 30;
+          max-width: @videotilewidth-lg - 30;
+          height: @videotileheight-lg;
         }
       }
     }
   }
 
   @media (min-width: @screen-xl-min) {
-    width: @videotilesize-xl;
+    width: @videotilewidth-xl;
     .videotile-content {
       .content-img {
         .img-container {
-          width: @videotilesize-xl - 30;
-          max-width: @videotilesize-xl - 30;
+          width: @videotilewidth-xl - 30;
+          max-width: @videotilewidth-xl - 30;
+          height: @videotileheight-xl;
         }
       }
     }
@@ -81,7 +90,7 @@
 
     .img-container {
       position: relative;
-      max-width: @videotilesize-xs;
+      max-width: @videotilewidth-xs;
 
       .container-icon {
         position: absolute;
