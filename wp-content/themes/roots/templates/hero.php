@@ -77,7 +77,7 @@
                 <a href="#" class="playbutton"><i class="icon-play"></i></a>
               </div>
 
-              <div class="hero-content">
+              <div class="hero-content sticky">
 
                 <div class="content-text">
                   <div class="text-headline">

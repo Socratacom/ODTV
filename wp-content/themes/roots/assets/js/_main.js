@@ -24,8 +24,7 @@ var Roots = {
     init: function() {
       // JavaScript to be fired on all pages
 
-
-
+      // shufflejs
       var vid_grid = $('#vid_grid');
       vid_grid.shuffle({
         itemSelector: '.item'
