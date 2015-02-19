@@ -2,6 +2,7 @@
   <a name="featured"></a>
   <h2 class="section-header">Featured</h2>
 
+<input class="filter__search js-shuffle-search" type="search" placeholder="Search...">
   <?php
     $page_slug = $post->post_name;
 
