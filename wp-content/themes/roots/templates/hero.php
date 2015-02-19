@@ -1,8 +1,8 @@
 <section>
   <div class="hero">
     <video id="bgvid" preload autoplay loop poster="<?php echo get_template_directory_uri(); ?>/assets/img/hero_bg.jpg">
-      <source src="<?php echo get_template_directory_uri(); ?>/assets/video/hero-loop.webm" type="video/webm">
-      <source src="<?php echo get_template_directory_uri(); ?>/assets/video/hero-loop.mp4" type="video/mp4">
+      <source src="/wp-content/uploads/2015/02/hero-loop.webm" type="video/webm">
+      <source src="/wp-content/uploads/2015/02/hero-loop.mp4" type="video/mp4">
     </video>
     <div class="videoWrapper">
       <!--<iframe id="videoWrapper-video" width="560" height="349" src="" frameborder="0" allowfullscreen></iframe>-->
