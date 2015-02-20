@@ -6932,6 +6932,10 @@ button.close {
 .comment-list ol {
   list-style: none;
 }
+.gform_wrapper {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
 .gform_wrapper ul {
   padding-left: 0;
   list-style: none;
@@ -6942,53 +6946,124 @@ button.close {
 .gform_wrapper form {
   margin-bottom: 0;
 }
+.gform_wrapper label {
+  font-weight: 400;
+}
 .gform_wrapper .gfield_required {
   padding-left: 1px;
-  color: #a94442;
+  color: #b94a48;
 }
-.ginput_container input,
-.ginput_container select,
-.ginput_container textarea {
+.gform_wrapper .gfield_error .gfield_label {
+  color: #b94a48;
+}
+.gform_wrapper .ginput_container input:not([type='checkbox']),
+.gform_wrapper .ginput_container select,
+.gform_wrapper .ginput_container textarea {
+  margin: 0;
   display: block;
-  width: 100%;
-  height: 34px;
-  padding: 6px 12px;
+  height: auto;
+  min-height: 2em;
+  padding: 3px 12px 6px;
   font-size: 14px;
-  line-height: 1.42857143;
-  color: #555555;
-  background-color: #ffffff;
-  background-image: none;
-  border: 1px solid #cccccc;
+  line-height: 1.4;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 1px solid #ccc;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
-  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+     transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.gform_wrapper .top_label li.gfield.gf_right_half,
+.gform_wrapper .top_label li.gfield.gf_left_half {
+  margin: 0 0 15px 0;
+}
+.gform_wrapper .gf_right_half .ginput_container .chosen-container,
+.gform_wrapper .gf_left_half .ginput_container .chosen-container {
+  margin-top: 5px;
+  max-width: 99%;
+  width: 99%;
+}
+.gform_wrapper .top_label li.gfield.gf_left_half input.medium,
+.gform_wrapper .top_label li.gfield.gf_left_half input.large,
+.gform_wrapper .top_label li.gfield.gf_left_half select.medium,
+.gform_wrapper .top_label li.gfield.gf_left_half select.large,
+.gform_wrapper .top_label li.gfield.gf_right_half input.medium,
+.gform_wrapper .top_label li.gfield.gf_right_half input.large,
+.gform_wrapper .top_label li.gfield.gf_right_half select.medium,
+.gform_wrapper .top_label li.gfield.gf_right_half select.large {
+  width: 99%;
+}
+.gform_wrapper .ginput_complex span.name_middle,
+.gform_wrapper .ginput_complex span.name_last {
+  margin-left: 1%;
+}
+.gform_wrapper .ginput_container textarea {
+  width: 100%;
+}
+.gform_wrapper .ginput_complex span.name_first,
+.gform_wrapper .ginput_complex span.name_middle,
+.gform_wrapper .ginput_complex span.name_last {
+  min-height: inherit;
+}
+.gform_wrapper .field_sublabel_hidden_label .ginput_complex.ginput_container input[type=text],
+.gform_wrapper .field_sublabel_hidden_label .ginput_complex.ginput_container select {
+  margin: 0;
+}
+.gform_wrapper .gfield_checkbox li label,
+.gform_wrapper .gfield_radio li label {
+  margin: -1px 0 0 24px;
+}
+.ginput_container input:-moz-placeholder,
+.ginput_container select:-moz-placeholder,
+.ginput_container textarea:-moz-placeholder {
+  color: #999;
+}
+.ginput_container input::-moz-placeholder,
+.ginput_container select::-moz-placeholder,
+.ginput_container textarea::-moz-placeholder {
+  color: #999;
+}
+.ginput_container input:-ms-input-placeholder,
+.ginput_container select:-ms-input-placeholder,
+.ginput_container textarea:-ms-input-placeholder {
+  color: #999;
+}
+.ginput_container input::-webkit-input-placeholder,
+.ginput_container select::-webkit-input-placeholder,
+.ginput_container textarea::-webkit-input-placeholder {
+  color: #999;
+}
+.required .ginput_container input:-moz-placeholder,
+.required .ginput_container select:-moz-placeholder,
+.required .ginput_container textarea:-moz-placeholder {
+  color: rgba(239, 130, 0, 0.6);
+}
+.required .ginput_container input::-moz-placeholder,
+.required .ginput_container select::-moz-placeholder,
+.required .ginput_container textarea::-moz-placeholder {
+  color: rgba(239, 130, 0, 0.6);
+}
+.required .ginput_container input:-ms-input-placeholder,
+.required .ginput_container select:-ms-input-placeholder,
+.required .ginput_container textarea:-ms-input-placeholder {
+  color: rgba(239, 130, 0, 0.6);
+}
+.required .ginput_container input::-webkit-input-placeholder,
+.required .ginput_container select::-webkit-input-placeholder,
+.required .ginput_container textarea::-webkit-input-placeholder {
+  color: rgba(239, 130, 0, 0.6);
 }
 .ginput_container input:focus,
 .ginput_container select:focus,
 .ginput_container textarea:focus {
   border-color: #66afe9;
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
-}
-.ginput_container input::-moz-placeholder,
-.ginput_container select::-moz-placeholder,
-.ginput_container textarea::-moz-placeholder {
-  color: #999999;
-  opacity: 1;
-}
-.ginput_container input:-ms-input-placeholder,
-.ginput_container select:-ms-input-placeholder,
-.ginput_container textarea:-ms-input-placeholder {
-  color: #999999;
-}
-.ginput_container input::-webkit-input-placeholder,
-.ginput_container select::-webkit-input-placeholder,
-.ginput_container textarea::-webkit-input-placeholder {
-  color: #999999;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
 .ginput_container input[disabled],
 .ginput_container select[disabled],
@@ -7000,8 +7075,7 @@ fieldset[disabled] .ginput_container input,
 fieldset[disabled] .ginput_container select,
 fieldset[disabled] .ginput_container textarea {
   cursor: not-allowed;
-  background-color: #eeeeee;
-  opacity: 1;
+  background-color: #eee;
 }
 textarea.ginput_container input,
 textarea.ginput_container select,
@@ -7037,12 +7111,12 @@ textarea.ginput_container textarea {
   -webkit-transition: background-color 0.5s;
   -o-transition: background-color 0.5s;
   transition: background-color 0.5s;
-  color: #ffffff;
-  background-color: #27ae60;
-  border-color: #229955;
+  color: #333333;
+  background-color: #ffffff;
+  border-color: #cccccc;
   color: #f4f4f4;
-  background-color: #e82932;
-  border-color: #e82932;
+  background-color: #575757;
+  border-color: #575757;
 }
 .gform_button:focus,
 .gform_button:active:focus,
@@ -7093,9 +7167,9 @@ fieldset[disabled] .gform_button {
 .gform_button:active,
 .gform_button.active,
 .open > .dropdown-toggle.gform_button {
-  color: #ffffff;
-  background-color: #1e8449;
-  border-color: #176739;
+  color: #333333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
 }
 .gform_button:active,
 .gform_button.active,
@@ -7120,73 +7194,115 @@ fieldset[disabled] .gform_button:active,
 .gform_button.disabled.active,
 .gform_button[disabled].active,
 fieldset[disabled] .gform_button.active {
-  background-color: #27ae60;
-  border-color: #229955;
+  background-color: #ffffff;
+  border-color: #cccccc;
 }
 .gform_button .badge {
-  color: #27ae60;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #333333;
 }
 .gform_button:hover,
 .gform_button:focus {
-  background-color: #c8161e;
-  border-color: #c8161e;
+  color: #f4f4f4;
+  background-color: #3e3e3e;
+  border-color: #3e3e3e;
 }
-.gform_wrapper .gfield_error .gfield_label {
-  color: #a94442;
+.gform_button:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.gform_button:hover,
+.gform_button:focus {
+  background-color: #27ae60;
+  color: #fff;
+}
+.gform_button:active,
+.gform_button.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.gform_button.disabled,
+.gform_button[disabled],
+fieldset[disabled] .gform_button {
+  pointer-events: none;
+  cursor: not-allowed;
+  opacity: .65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.gform_button:active,
+.gform_button.active,
+.open .dropdown-toggle.gform_button {
+  background-image: none;
+}
+.gform_button.disabled,
+.gform_button[disabled],
+fieldset[disabled] .gform_button,
+.gform_button.disabled:hover,
+.gform_button[disabled]:hover,
+fieldset[disabled] .gform_button:hover,
+.gform_button.disabled:focus,
+.gform_button[disabled]:focus,
+fieldset[disabled] .gform_button:focus,
+.gform_button.disabled:active,
+.gform_button[disabled]:active,
+fieldset[disabled] .gform_button:active,
+.gform_button.disabled.active,
+.gform_button[disabled].active,
+fieldset[disabled] .gform_button.active {
+  background-color: #428bca;
+  border-color: #357ebd;
 }
 .gform_wrapper .gfield_error input,
 .gform_wrapper .gfield_error select,
 .gform_wrapper .gfield_error textarea {
-  border-color: #ebccd1;
+  color: #b94a48;
   background-color: #f2dede;
-  color: #a94442;
+  border-color: #eed3d7;
 }
 .gform_wrapper .gfield_error input:focus,
 .gform_wrapper .gfield_error select:focus,
 .gform_wrapper .gfield_error textarea:focus {
-  border-color: #a94442;
+  border-color: #b94a48;
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(169, 68, 66, 0.6);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(169, 68, 66, 0.6);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(185, 74, 72, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(185, 74, 72, 0.6);
 }
 .validation_error {
   padding: 15px;
   margin-bottom: 20px;
-  border: 1px solid transparent;
-  border-radius: 4px;
+  color: #b94a48;
   background-color: #f2dede;
-  border-color: #ebccd1;
-  color: #a94442;
+  border: 1px solid transparent;
+  border-color: #eed3d7;
+  border-radius: 4px;
 }
 .validation_error h4 {
   margin-top: 0;
   color: inherit;
 }
 .validation_error .alert-link {
-  font-weight: bold;
-}
-.validation_error > p,
-.validation_error > ul {
-  margin-bottom: 0;
+  font-weight: boldcolor: #953b39;
 }
 .validation_error > p + p {
   margin-top: 5px;
 }
 .validation_error hr {
-  border-top-color: #e4b9c0;
+  border-top-color: #e6c1c7;
 }
-.validation_error .alert-link {
-  color: #843534;
+.validation_error  > p,
+.validation_error  > ul {
+  margin-bottom: 0;
 }
 #gforms_confirmation_message {
   padding: 15px;
   margin-bottom: 20px;
   border: 1px solid transparent;
   border-radius: 4px;
-  background-color: #dff0d8;
-  border-color: #d6e9c6;
-  color: #3c763d;
 }
 #gforms_confirmation_message h4 {
   margin-top: 0;
@@ -7195,70 +7311,50 @@ fieldset[disabled] .gform_button.active {
 #gforms_confirmation_message .alert-link {
   font-weight: bold;
 }
-#gforms_confirmation_message > p,
-#gforms_confirmation_message > ul {
-  margin-bottom: 0;
-}
 #gforms_confirmation_message > p + p {
   margin-top: 5px;
 }
-#gforms_confirmation_message hr {
-  border-top-color: #c9e2b3;
+#gforms_confirmation_message  > p,
+#gforms_confirmation_message  > ul {
+  margin-bottom: 0;
 }
-#gforms_confirmation_message .alert-link {
-  color: #2b542c;
+@media (max-width: 768px) {
+  .gform_wrapper .top_label li.gfield.gf_left_half,
+  .gform_wrapper .top_label li.gfield.gf_right_half {
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+  .gform_wrapper .ginput_complex.ginput_container.has_first_name.has_last_name span {
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+  .gform_wrapper .ginput_complex.ginput_container.has_first_name.has_last_name span:last-child {
+    margin: 0;
+  }
 }
-.ginput_left {
-  float: left;
-  width: 50%;
+.sidebar .gform_wrapper .top_label li.gfield.gf_left_half,
+.sidebar .gform_wrapper .top_label li.gfield.gf_right_half {
+  width: 100%;
+  margin: 0 0 15px 0;
 }
-.ginput_right {
-  float: right;
-  width: 49%;
+.sidebar .gform_wrapper .ginput_complex.ginput_container.has_first_name.has_last_name span {
+  width: 100%;
+  margin: 0 0 15px 0;
 }
-.gform_wrapper .ginput_complex label,
-.gform_wrapper .gfield_time_hour label,
-.gform_wrapper .gfield_time_minute label,
-.gform_wrapper .gfield_date_month label,
-.gform_wrapper .gfield_date_day label,
-.gform_wrapper .gfield_date_year label,
-.gform_wrapper .instruction {
-  display: block;
-  margin: 3px 0;
-  font-size: 11px;
-  letter-spacing: 0.5pt;
+.sidebar .gform_wrapper .ginput_complex.ginput_container.has_first_name.has_last_name span:last-child {
+  margin: 0;
 }
-.gform_wrapper .ginput_complex .ginput_left,
-.gform_wrapper .ginput_complex .ginput_right,
-.gform_wrapper .ginput_complex .ginput_full {
-  min-height: 43px;
-  display: block;
-  overflow: hidden;
-}
-.gform_wrapper input[type=text],
-.gform_wrapper input[type=url],
-.gform_wrapper input[type=email],
-.gform_wrapper input[type=tel],
-.gform_wrapper input[type=number],
-.gform_wrapper input[type=password] {
-  outline-style: none;
-  font-size: 11px;
-  font-family: inherit;
-  padding: 5px 2px 5px 2px;
-  letter-spacing: normal;
-}
-.gform_wrapper ul li.gfield {
-  clear: both;
-}
-.gf_clear {
-  clear: both;
-}
-.ginput_container input {
+.gform_wrapper .ginput_container input:not([type='checkbox']),
+.gform_wrapper .ginput_container select,
+.gform_wrapper .ginput_container textarea {
   padding-left: 8px;
   background-color: #7a7a7a;
   border-color: #7a7a7a;
   border-radius: 0px;
   color: #c1c1c1;
+}
+.gform_wrapper .ginput_container input:not([type='checkbox']) {
+  height: 38px;
 }
 .gform_confirmation_message {
   margin: 1em 0 1em 0;
@@ -7267,6 +7363,14 @@ fieldset[disabled] .gform_button.active {
   border: none;
   background: none;
   text-align: left;
+}
+.gform_wrapper input[type=text],
+.gform_wrapper input[type=url],
+.gform_wrapper input[type=email],
+.gform_wrapper input[type=tel],
+.gform_wrapper input[type=number],
+.gform_wrapper input[type=password] {
+  font-size: 14px;
 }
 .gallery-row {
   padding: 10px 0;
@@ -7620,6 +7724,23 @@ p {
 .banner .at4-icon {
   background-color: #575757 !important;
 }
+.modal-dialog-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.modal-body {
+  overflow-y: auto;
+}
+.modal-footer {
+  margin-top: 0;
+}
+@media (max-width: 767px) {
+  .modal-dialog-center {
+    width: 100%;
+  }
+}
 .video-modal {
   color: #171717;
 }
@@ -7687,8 +7808,11 @@ p {
 .video-modal .border-left {
   border-left: 1px solid #7a7a7a;
 }
+.video-modal .container {
+  width: 100%;
+}
 .video-modal .row {
-  padding: 15px;
+  padding: 0;
 }
 .video-modal .close {
   color: #f4f4f4;
@@ -7715,6 +7839,15 @@ p {
 }
 .video-modal header {
   display: none;
+}
+.form-modal .modal-content {
+  background-color: #171717;
+}
+.form-modal .modal-content .gform_wrapper input {
+  width: 100%;
+}
+.form-modal .modal-content .gform_confirmation_message {
+  text-align: center;
 }
 .hero {
   position: relative;

@@ -37,7 +37,9 @@
                 <p>Have an open data success you'd like to share? A suggested topic for us to cover</p>
               </div>
               <div class="contribute-button">
-                <a href="#" class="btn btn-primary">Drop us a line</a>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#form-modal">
+                  Drop us a line
+                </button>
               </div>
             </div>
           </div>
@@ -100,5 +102,15 @@
 </footer>
 
 
-<div class="video-modal modal fade" tabindex="-1">
+<div class="video-modal modal fade" tabindex="-1" role="dialog" aria-labelledby="myModal2Label" aria-hidden="true">
 </div>
+
+<div class="form-modal modal fade" id="form-modal" tabindex="-1" role="dialog" aria-labelledby="myModal5Label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <?php echo do_shortcode('[gravityform id="2" title="false" description="false" ajax="true"]'); ?>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

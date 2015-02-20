@@ -1,3 +1,25 @@
+.modal-dialog-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.modal-body {
+    overflow-y: auto;
+}
+.modal-footer {
+    margin-top: 0;
+}
+
+@media (max-width: 767px) {
+  .modal-dialog-center {
+    width: 100%;
+  }
+}
+
+
+// load video pages
 .video-modal {
   .modal-backdrop {
     height: 100% !important;
@@ -72,8 +94,12 @@
     border-left: 1px solid @light-gray;
   }
 
+  .container {
+    width: 100%;
+  }
+
   .row {
-    padding: 15px;
+    padding: 0;
   }
 
   .close {
@@ -95,6 +121,7 @@
     padding-top: 25px;
     height: 0;
   }
+
   .videoWrapper iframe {
     position: absolute;
     top: 0;
@@ -105,5 +132,22 @@
 
   header {
     display: none;
+  }
+}
+
+// load gravity form
+.form-modal {
+  .modal-content {
+    background-color: @odtv-black;
+
+    .gform_wrapper {
+      input {
+        width: 100%;
+      }
+    }
+
+    .gform_confirmation_message {
+      text-align: center;
+    }
   }
 }

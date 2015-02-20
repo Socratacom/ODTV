@@ -90,12 +90,7 @@
 
                 <div class="content-buttons">
                   <a href="#featured" class="btn btn-primary btn-large btn-main">Browse Videos</a>
-                  <a href="#featured" class="btn btn-default btn-secondary">Featured</a>
-                  <a href="#recent" class="btn btn-default btn-secondary">Recent</a>
-                </div>
-
-                <div class="content-search">
-                  <?php get_search_form( $echo ); ?>
+                  <a href="http://www.socrata.com/open-data-field-guide-chapter/about/?utm_source=odtv&utm_medium=organic&utm_content=cta&utm_campaign=open-data-field-guide" class="btn btn-default btn-secondary">What is Open Data</a>
                 </div>
 
               </div>
