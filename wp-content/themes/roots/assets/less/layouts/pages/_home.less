@@ -1,13 +1,27 @@
-section {
-  .section-header {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid @med-gray;
+.section-header {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid @med-gray;
+
+  h2 {
+    float: left;
+    margin: 24px 0 0 0;
   }
 
-  &.section-results {
-    padding-top: 30px;
-    padding-bottom: 30px;
+  .searchbar {
+    float: right;
+  }
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+section {
+  #homefilter {
+    margin: 0 auto;
   }
 }

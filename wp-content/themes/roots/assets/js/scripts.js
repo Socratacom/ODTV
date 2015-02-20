@@ -2390,7 +2390,7 @@ var Roots = {
       }
 
       $("#homefilter").keyup(function(){
-        $("#homefilter-text").html('Search Results For: "' + $(this).val() + '"');
+        $("#homefilter-text").html('Results For: "' + $(this).val() + '"');
 
         if( $("#homefilter").val().length === 0) {
           $("#homefilter-text").html('Featured Videos');

@@ -16,7 +16,7 @@
     </div>
 
     <div class="nav-search">
-    <input id="homefilter" class="filter__search js-shuffle-search" type="search" placeholder="Search...">
+
     </div>
 
     <div class="nav-right">
