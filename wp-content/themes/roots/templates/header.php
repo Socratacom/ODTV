@@ -15,10 +15,11 @@
       <a href="http://www.socrata.com/open-data-field-guide-chapter/about/?utm_source=odtv&utm_medium=organic&utm_content=cta&utm_campaign=open-data-field-guide" class="btn btn-default">What is Open Data</a>
     </div>
 
-    <div class="nav-right">
-      <div class="nav-cta">
+    <div class="nav-search">
+    <input id="homefilter" class="filter__search js-shuffle-search" type="search" placeholder="Search...">
+    </div>
 
-      </div>
+    <div class="nav-right">
       <div class="nav-social">
         <div class="social-label">Share ODTV:</div>
         <div class="social-icons">

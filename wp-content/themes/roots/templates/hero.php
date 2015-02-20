@@ -77,7 +77,7 @@
                 <a href="#" class="playbutton"><i class="icon-play"></i></a>
               </div>
 
-              <div class="hero-content sticky">
+              <div class="hero-content">
 
                 <div class="content-text">
                   <div class="text-headline">
@@ -88,7 +88,7 @@
                   </div>
                 </div>
 
-                <div class="content-buttons">
+                <div class="content-buttons sticky">
                   <a href="#featured" class="btn btn-primary btn-large btn-main">Browse Videos</a>
                   <a href="http://www.socrata.com/open-data-field-guide-chapter/about/?utm_source=odtv&utm_medium=organic&utm_content=cta&utm_campaign=open-data-field-guide" class="btn btn-default btn-secondary">What is Open Data</a>
                 </div>

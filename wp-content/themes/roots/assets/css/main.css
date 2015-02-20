@@ -7344,6 +7344,10 @@ fieldset[disabled] .gform_button.active {
 .sidebar .gform_wrapper .ginput_complex.ginput_container.has_first_name.has_last_name span:last-child {
   margin: 0;
 }
+textarea:focus,
+input:focus {
+  outline: 0;
+}
 .gform_wrapper .ginput_container input:not([type='checkbox']),
 .gform_wrapper .ginput_container select,
 .gform_wrapper .ginput_container textarea {
@@ -7371,6 +7375,18 @@ fieldset[disabled] .gform_button.active {
 .gform_wrapper input[type=number],
 .gform_wrapper input[type=password] {
   font-size: 14px;
+}
+#homefilter {
+  padding-left: 8px;
+  background-color: #171717;
+  border: none;
+  border-bottom: 1px solid #f4f4f4;
+  border-radius: 0px;
+  color: #f4f4f4;
+  margin: 20px;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
 }
 .gallery-row {
   padding: 10px 0;
@@ -8178,6 +8194,37 @@ p {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
+  /*.nav-search {
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    margin-top: @buttonMarginTop;
+    font-size: 12px;
+    color: @med-gray;
+
+    .left-inner-addon i {
+      display: none;
+    }
+
+    form {
+      #search {
+        height: 32px;
+        width: 0px;
+        padding: 0px;
+        .transition(all, 0.5s);
+
+        &.visible {
+          width: 300px;
+          padding: 0 20px;
+        }
+      }
+
+      button {
+        display: none;
+        padding: 8px 10px;
+      }
+    }
+  }*/
 }
 .banner.fixed {
   position: fixed;
@@ -8220,42 +8267,22 @@ p {
   font-size: 12px;
 }
 .banner .nav-search {
-  position: absolute;
-  right: 0;
-  display: inline-block;
-  margin-top: 50px;
-  font-size: 12px;
-  color: #575757;
+  float: left;
+  margin-top: 30px;
+  margin-left: 20px;
 }
-.banner .nav-search .left-inner-addon i {
-  display: none;
-}
-.banner .nav-search form #search {
-  height: 32px;
-  width: 0px;
-  padding: 0px;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-}
-.banner .nav-search form #search.visible {
-  width: 300px;
-  padding: 0 20px;
-}
-.banner .nav-search form button {
-  display: none;
-  padding: 8px 10px;
+.banner .nav-search input {
+  height: 38px;
+  width: 400px;
 }
 .banner .nav-right {
   float: right;
 }
 .banner .nav-right .nav-social {
   display: inline-block;
-  margin-top: 50px;
-  margin-right: 60px;
+  margin-top: 30px;
 }
 .banner .nav-right .nav-social .social-label {
-  display: inline-block;
   font-size: 12px;
   color: #575757;
   text-transform: uppercase;

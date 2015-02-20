@@ -45,7 +45,7 @@ var Roots = {
         });
       });
 
-      //
+      //Modal - Full browser height and centered
       function adjustModalMaxHeightAndPosition(){
         $('.modal').each(function(){
           if($(this).hasClass('in') === false){
@@ -85,9 +85,27 @@ var Roots = {
       }
 
 
+      // live type update video filter input
+      if( $("#homefilter").val().length === 0) {
+        $("#homefilter-text").html('Featured Videos');
+      }
+
+      $("#homefilter").keyup(function(){
+        $("#homefilter-text").html('Search Results For: "' + $(this).val() + '"');
+
+        if( $("#homefilter").val().length === 0) {
+          $("#homefilter-text").html('Featured Videos');
+        }
+      });
+
+
       //Sticky nav function
       var stickyOffset = $('.sticky').offset().top;
       var navBar = $('.fixed');
+
+      $( window ).resize(function(){
+        var stickyOffset = $('.sticky').offset().top;
+      });
 
       $(window).scroll(function(){
         var sticky = $('.sticky');
@@ -140,7 +158,7 @@ var Roots = {
       });
 
       // Video Post Modal
-      jQuery(document).ready(function($) {
+      /*jQuery(document).ready(function($) {
           var $modal = $('.video-modal');
           var video_url, video_title;
 
@@ -162,11 +180,15 @@ var Roots = {
 
           $modal.on('shown.bs.modal', function(){
               setTimeout(function(){
-                  $modal.find('.modal-title').html(video_title);
+                $modal.find('.modal-title').html(video_title);
 
               $modal.find('.modal-body').load(video_url + ' article.type-video ', '' , function(){
                 addthis.toolbox('.addthis_toolbox');
+                $(window).resize(adjustModalMaxHeightAndPosition).trigger("resize");
               });
+
+                $modal.find('#frame').attr('src', video_url);
+                //$(window).resize(adjustModalMaxHeightAndPosition).trigger("resize");
 
               }, 0);
 
@@ -176,7 +198,7 @@ var Roots = {
 
       $('.video-modal').on('hidden.bs.modal', function () {
         $(this).find('.modal-dialog').remove();
-      });
+      });*/
 
     }
   },

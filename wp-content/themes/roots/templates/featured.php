@@ -1,6 +1,8 @@
 <section class="section-results">
   <a name="featured"></a>
 
+  <h2 class="section-header"><span id="homefilter-text"></span></h2>
+
   <?php
     $page_slug = $post->post_name;
 
