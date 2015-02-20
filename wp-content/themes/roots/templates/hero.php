@@ -1,70 +1,65 @@
+
 <section>
   <div class="hero">
     <video id="bgvid" preload autoplay loop poster="<?php echo get_template_directory_uri(); ?>/assets/img/hero_bg.jpg">
       <source src="/wp-content/uploads/2015/02/hero-loop.webm" type="video/webm">
       <source src="/wp-content/uploads/2015/02/hero-loop.mp4" type="video/mp4">
     </video>
-    <div class="videoWrapper">
-      <!--<iframe id="videoWrapper-video" width="560" height="349" src="" frameborder="0" allowfullscreen></iframe>-->
 
-      <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
-      <div id="player"></div>
+    <div class="hero-video">
+      <div class="videoWrapper">
 
 
-      <script>
+        <div id="player"></div>
 
-      var tag = document.createElement('script');
-      tag.src = "//www.youtube.com/player_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        <script>
 
-      var player;
-      function onYouTubePlayerAPIReady() {
-          player = new YT.Player('player', {
-            height: '390',
-            width: '640',
-            videoId: 'SWHeUeB0Dqs',
-            playerVars: {
-              'autoplay': 0,
-              'controls': 0,
-              'rel' : 0,
-              'html5' : 1,
-              'showinfo' : 0
-            },
-            events: {
-              'onReady': onPlayerReady,
-              'onStateChange': onPlayerStateChange
-            }
-          });
-      }
+        var tag = document.createElement('script');
+        tag.src = "//www.youtube.com/player_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-      function onPlayerReady(event) {
-          //event.target.playVideo();
-      }
-
-      function onPlayerStateChange(event) {
-        if(event.data === 0) {
-          $('.videoWrapper').removeClass('visible');
-          $('.videoWrapper').addClass('hidden');
-          $('.contentWrapper').removeClass('hidden');
-          $('.contentWrapper').addClass('visible');
+        var player;
+        function onYouTubePlayerAPIReady() {
+            player = new YT.Player('player', {
+              height: '390',
+              width: '640',
+              videoId: 'SWHeUeB0Dqs',
+              playerVars: {
+                'autoplay': 0,
+                'controls': 0,
+                'rel' : 0,
+                'html5' : 1,
+                'showinfo' : 0
+              },
+              events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+              }
+            });
         }
-      }
 
-      $('.playbutton').click(function() {
-        $('.videoWrapper').removeClass('hidden');
-        $('.videoWrapper').addClass('visible');
-        $('.contentWrapper').removeClass('visible');
-        $('.contentWrapper').addClass('hidden');
-        player.playVideo();
-      });
+        function onPlayerReady(event) {
+            //event.target.playVideo();
+        }
 
-      </script>
+        function onPlayerStateChange(event) {
+          if(event.data === 0) {
+            $('.videoWrapper').removeClass('visible');
+            $('.contentWrapper').removeClass('hidden');
+          }
+        }
+
+        </script>
+
+        <a href="#" class="video-close">X</a>
+      </div>
     </div>
 
-    <div class="contentWrapper">
+    <div class="container">
+      <div class="contentWrapper">
 
-      <div class="container">
+
         <div class="row">
           <div class="col-md-12">
             <div class="hero-container">
@@ -99,8 +94,9 @@
           </div>
         </div>
       </div>
-
     </div>
 
   </div>
+
 </section>
+

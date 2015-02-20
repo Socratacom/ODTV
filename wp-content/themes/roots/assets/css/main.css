@@ -7866,7 +7866,7 @@ p {
 }
 .hero {
   position: relative;
-  height: auto;
+  height: 600px;
   background-color: #171717;
   -webkit-background-size: cover;
           background-size: cover;
@@ -7888,15 +7888,22 @@ p {
   -webkit-background-size: cover;
           background-size: cover;
 }
+.hero .container {
+  position: relative;
+}
+.hero .hero-video {
+  position: absolute;
+  width: 100%;
+}
 .hero .videoWrapper {
   position: relative;
   padding-top: 25px;
   height: 400px;
-  display: none;
+  display: block;
   opacity: 0.0;
-  -webkit-transition: opacity 0.5s;
-  -o-transition: opacity 0.5s;
-  transition: opacity 0.5s;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 @media (min-width: 768px) {
   .hero .videoWrapper {
@@ -7904,15 +7911,37 @@ p {
   }
 }
 .hero .videoWrapper.visible {
-  display: block;
   opacity: 1.0;
+}
+.hero .videoWrapper .video-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 4px 8px;
+  background-color: #171717;
+  border: 1px solid #575757;
+  border-radius: 4px;
+  color: white;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.hero .videoWrapper .video-close:hover,
+.hero .videoWrapper .video-close:focus {
+  text-decoration: none;
+  background-color: #c1c1c1;
+  color: #171717;
 }
 .hero .videoWrapper iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: calc(100% - 35px);
+  height: 100%;
+}
+.hero .contentWrapper {
+  position: absolute;
+  width: calc( 100% - 30px);
 }
 .hero .contentWrapper.hidden {
   display: none;

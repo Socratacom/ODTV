@@ -2397,26 +2397,6 @@ var Roots = {
         }
       });
 
-
-      //Sticky nav function
-      var stickyOffset = $('.sticky').offset().top;
-      var navBar = $('.fixed');
-
-      $( window ).resize(function(){
-        var stickyOffset = $('.sticky').offset().top;
-      });
-
-      $(window).scroll(function(){
-        var sticky = $('.sticky');
-        var scroll = $(window).scrollTop();
-
-        if (scroll >= stickyOffset){
-          navBar.addClass('visible');
-        }
-        else {navBar.removeClass('visible');
-        }
-      });
-
       // expanding search form
       var searchField = $('.banner .search-field');
       var searchExpand = $('.banner .btn-search');
@@ -2434,11 +2414,17 @@ var Roots = {
       });
 
       $('.playbutton').click(function() {
-        $('.videoWrapper').removeClass('hidden');
         $('.videoWrapper').addClass('visible');
-        $('.contentWrapper').removeClass('visible');
         $('.contentWrapper').addClass('hidden');
+        player.seekTo(0, false);
         player.playVideo();
+      });
+
+      $('.video-close').click(function() {
+        $('.videoWrapper').removeClass('visible');
+        $('.contentWrapper').removeClass('hidden');
+        player.stopVideo();
+        player.clearVideo();
       });
 
       //smooth scroll to anchor
@@ -2505,6 +2491,26 @@ var Roots = {
   home: {
     init: function() {
       // JavaScript to be fired on the home page
+
+      //Sticky nav function
+      var stickyOffset = $('.sticky').offset().top;
+      var navBar = $('.fixed');
+
+      $( window ).resize(function(){
+        var stickyOffset = $('.sticky').offset().top;
+      });
+
+      $(window).scroll(function(){
+        var sticky = $('.sticky');
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= stickyOffset){
+          navBar.addClass('visible');
+        }
+        else {navBar.removeClass('visible');
+        }
+      });
+
 
     }
   },
