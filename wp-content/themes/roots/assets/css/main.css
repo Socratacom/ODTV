@@ -8105,6 +8105,7 @@ p {
 }
 .hero-container .hero-content .content-buttons .btn-secondary {
   margin-top: 10px;
+  padding: 8px 16px;
 }
 @media (min-width: 768px) {
   .hero-container .hero-content .content-buttons .btn-secondary {
@@ -8321,7 +8322,7 @@ p {
 }
 .banner .nav-buttons .btn,
 .banner .nav-buttons .comment-form input[type="submit"] {
-  padding: 5px 10px;
+  padding: 8px 16px;
   font-size: 12px;
 }
 .banner .nav-search {
