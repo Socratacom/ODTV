@@ -6853,8 +6853,26 @@ button.close {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-play:before {
+.icon-plus:before {
   content: "\e602";
+}
+.icon-facebook:before {
+  content: "\e608";
+}
+.icon-twitter2:before {
+  content: "\e609";
+}
+.icon-google-plus:before {
+  content: "\e60a";
+}
+.icon-linked:before {
+  content: "\e60b";
+}
+.icon-email:before {
+  content: "\e60c";
+}
+.icon-chevron-down:before {
+  content: "\e607";
 }
 .icon-eye:before {
   content: "\e600";
@@ -7693,9 +7711,21 @@ p {
 }
 .template-socialBar .socialBar-addThis {
   float: left;
+  margin-top: 20px;
 }
 .template-socialBar .socialBar-addThis .addThis-widget {
   display: inline-block;
+}
+.template-socialBar .socialBar-addThis .addThis-widget a {
+  margin-right: 20px;
+}
+.template-socialBar .socialBar-addThis .addThis-widget a:hover,
+.template-socialBar .socialBar-addThis .addThis-widget a:focus {
+  text-decoration: none;
+}
+.template-socialBar .socialBar-addThis .addThis-widget a i {
+  font-size: 30px;
+  color: #575757;
 }
 .template-socialBar .socialBar-statsContainer {
   float: right;
@@ -8318,6 +8348,17 @@ p {
 .banner .nav-right .nav-social .social-icons {
   display: inline-block;
 }
+.banner .nav-right .nav-social .social-icons a {
+  margin-right: 10px;
+}
+.banner .nav-right .nav-social .social-icons a:hover,
+.banner .nav-right .nav-social .social-icons a:focus {
+  text-decoration: none;
+}
+.banner .nav-right .nav-social .social-icons a i {
+  font-size: 20px;
+  color: #575757;
+}
 .sidebar {
   position: relative;
   min-height: 1px;
@@ -8634,6 +8675,9 @@ footer.bodyfooter .social .gform_confirmation_message {
   border: none;
   background: none;
   text-align: left;
+}
+footer.bodyfooter .social .validation_error {
+  display: none;
 }
 footer.bodyfooter .social .gform_wrapper .top_label .gfield_label {
   display: none;

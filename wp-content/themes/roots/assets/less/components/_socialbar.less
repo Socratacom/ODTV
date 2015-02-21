@@ -9,9 +9,24 @@
 
   .socialBar-addThis {
     float: left;
+    margin-top: 20px;
 
     .addThis-widget {
       display: inline-block;
+
+      a {
+        margin-right: 20px;
+
+        &:hover,
+        &:focus {
+          text-decoration: none;
+        }
+
+        i {
+          font-size: 30px;
+          color: @med-gray;
+        }
+      }
     }
   }
 

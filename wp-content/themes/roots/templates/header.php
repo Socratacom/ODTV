@@ -24,12 +24,24 @@
         <div class="social-label">Share ODTV:</div>
         <div class="social-icons">
           <div class="addthis_toolbox addthis_32x32_style">
-            <a class="addthis_button_email"></a>
-            <a class="addthis_button_linkedin"></a>
-            <a class="addthis_button_google_plusone_share"></a>
-            <a class="addthis_button_twitter"></a>
-            <a class="addthis_button_facebook"></a>
-            <a class="addthis_button_expanded"></a>
+            <a class="addthis_button_email">
+              <i class="icon-email"></i>
+            </a>
+            <a class="addthis_button_linkedin">
+              <i class="icon-linked"></i>
+            </a>
+            <a class="addthis_button_google_plusone_share">
+              <i class="icon-google-plus"></i>
+            </a>
+            <a class="addthis_button_twitter">
+              <i class="icon-twitter"></i>
+            </a>
+            <a class="addthis_button_facebook">
+              <i class="icon-facebook"></i>
+            </a>
+            <a class="addthis_button_expanded">
+              <i class="icon-plus"></i>
+            </a>
           </div>
         </div>
       </div>
