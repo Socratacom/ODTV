@@ -6853,6 +6853,9 @@ button.close {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-play:before {
+  content: "\e60d";
+}
 .icon-plus:before {
   content: "\e602";
 }
