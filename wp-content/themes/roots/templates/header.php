@@ -1,3 +1,8 @@
+<?php
+  $cta_label = get_field('cta_label');
+  $cta_link = get_field('cta_link');
+?>
+
 <header class="banner navbar navbar-default fixed" role="banner">
   <div class="container">
     <div class="navbar-header">
@@ -12,7 +17,7 @@
     <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/odtv-logo.png"></a>
 
     <div class="nav-buttons">
-      <a href="http://www.socrata.com/open-data-field-guide-chapter/about/?utm_source=odtv&utm_medium=organic&utm_content=cta&utm_campaign=open-data-field-guide" class="btn btn-default">What is Open Data</a>
+      <a href="<?php echo $cta_link; ?>" class="btn btn-default"><?php echo $cta_label; ?></a>
     </div>
 
     <div class="nav-search">
