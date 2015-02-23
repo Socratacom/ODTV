@@ -1,6 +1,6 @@
 <?php
-  $cta_label = get_field('cta_label');
-  $cta_link = get_field('cta_link');
+  $cta_label = get_field('cta_label', page-id-5);
+  $cta_link = get_field('cta_link', page-id-5);
 ?>
 
 <header class="banner navbar navbar-default fixed" role="banner">
