@@ -1,3 +1,9 @@
+<script
+  type="text/javascript"
+  data-lf-domain="{network name (domain.fyre.co)}"
+  src="//cdn.livefyre.com/libs/commentcount/v1.0/commentcount.js">
+</script>
+
 <?php while (have_posts()) : the_post();
   $video_quote = get_field('quote');
   $post_views = '[post_view]';
@@ -53,7 +59,8 @@
             </div>
             <div class="statsContainer-stats">
               <div class="stats-number">
-                <p><?php comments_number( '0', '1', '%' ); ?></p>
+                <p><span class="livefyre-commentcount" data-lf-site-id="371534" data-lf-article-id="<?php the_permalink(); ?>">
+0</span></p>
               </div>
               <div class="stats-label">
                 <p>comments</p>

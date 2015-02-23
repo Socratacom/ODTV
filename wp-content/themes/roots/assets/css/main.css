@@ -8844,7 +8844,7 @@ body {
 }
 .single-video .banner.fixed {
   position: static;
-  height: auto;
+  height: 120px;
 }
 .single-video h1,
 .single-video h2,
