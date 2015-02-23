@@ -34,7 +34,7 @@
                 <h4>Contribute</h4>
               </div>
               <div class="contribute-body">
-                <p>Have an open data success you'd like to share? A suggested topic for us to cover</p>
+                <p>Have an open data success you'd like to share? A suggested topic for us to cover.</p>
               </div>
               <div class="contribute-button">
                 <button class="btn btn-primary" data-toggle="modal" data-target="#form-modal">
