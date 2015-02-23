@@ -7707,6 +7707,7 @@ p {
 .template-socialBar {
   height: 65px;
   border-bottom: 1px solid #575757;
+  background-color: #f4f4f4;
 }
 .template-socialBar .socialBar-label {
   float: left;
@@ -7970,7 +7971,7 @@ p {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: calc( 100% - 0px);
 }
 .hero .contentWrapper {
   position: absolute;
@@ -7985,12 +7986,6 @@ p {
     min-height: 600px;
     position: relative;
   }
-}
-.hero-container .playbutton {
-  color: #c1c1c1;
-}
-.hero-container .playbutton:hover {
-  text-decoration: none;
 }
 .hero-container .hero-logo {
   top: 40px;
@@ -8017,11 +8012,18 @@ p {
   .hero-container .content-play {
     position: absolute;
     top: 40%;
-    left: 50%;
+    left: 48%;
     z-index: 999;
     margin: 0;
     text-align: left;
   }
+}
+.hero-container .content-play .playbutton {
+  color: #c1c1c1;
+}
+.hero-container .content-play .playbutton:hover,
+.hero-container .content-play .playbutton:focus {
+  text-decoration: none;
 }
 .hero-container .content-play .playbutton i {
   font-size: 60px;
@@ -8112,17 +8114,17 @@ p {
 }
 @media (min-width: 768px) {
   .hero-container .hero-content .content-buttons .btn-secondary {
-    margin-top: 15px;
+    margin-top: 10px;
   }
 }
 @media (min-width: 1200px) {
   .hero-container .hero-content .content-buttons .btn-secondary {
-    margin-top: 25px;
+    margin-top: 35px;
   }
 }
 @media (min-width: 1600px) {
   .hero-container .hero-content .content-buttons .btn-secondary {
-    margin-top: 25px;
+    margin-top: 35px;
   }
 }
 .hero-container .hero-content .content-search {
@@ -8249,6 +8251,7 @@ p {
   min-height: 400px !important;
 }
 .banner {
+  margin-bottom: 0;
   background-color: #171717;
   border-color: #171717;
   border-radius: 0px;
@@ -8788,15 +8791,22 @@ body {
 section #homefilter {
   margin: 0 auto;
 }
-.single-video .wrap {
-  background: #f4f4f4;
-  color: #171717;
-  margin-bottom: 0;
+.single-video .banner.fixed {
+  position: static;
+  height: auto;
 }
 .single-video h1,
 .single-video h2,
 .single-video p {
   color: #171717;
+}
+.single-video .wrap {
+  background: #171717;
+  color: #171717;
+  margin-bottom: 0;
+}
+.single-video .border-left {
+  border-left: 1px solid #575757;
 }
 .single-video .videoWrapper {
   position: relative;
@@ -8812,8 +8822,9 @@ section #homefilter {
   width: 100%;
   height: 100%;
 }
-.single-video .border-left {
-  border-left: 1px solid #575757;
+.single-video article .container {
+  max-width: 970px;
+  background-color: #f4f4f4;
 }
 .single-video .entry-content .content-quote {
   position: relative;

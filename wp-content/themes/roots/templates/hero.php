@@ -26,6 +26,7 @@
               width: '640',
               videoId: 'SWHeUeB0Dqs',
               playerVars: {
+                'modestbranding' : 1,
                 'autoplay': 0,
                 'controls': 0,
                 'rel' : 0,
@@ -76,7 +77,7 @@
 
                 <div class="content-text">
                   <div class="text-headline">
-                    <h1>Welcome to Open Data TV</h1>
+                    <h1>Welcome to Open&nbsp;Data&nbsp;TV</h1>
                   </div>
                   <div class="text-subtext">
                     <p>Tune into ODTV to hear from the world’s foremost thought leaders on how government is using data to drive performance, boost the economy, and increase citizen engagement.</p>

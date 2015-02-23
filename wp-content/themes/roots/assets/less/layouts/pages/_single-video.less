@@ -1,8 +1,8 @@
 .single-video {
-  .wrap {
-    background: @odtv-white;
-    color: @odtv-black;
-    margin-bottom: 0;
+
+  .banner.fixed {
+    position: static;
+    height: auto;
   }
 
   h1,
@@ -11,25 +11,40 @@
     color: @odtv-black;
   }
 
-  .videoWrapper {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
-    padding-top: 25px;
-    height: 0;
-  }
-
-  .videoWrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  .wrap {
+    background: @odtv-black;
+    color: @odtv-black;
+    margin-bottom: 0;
   }
 
   .border-left {
     border-left: 1px solid @med-gray;
   }
 
+  // video header
+  .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  article {
+    .container {
+      max-width: 970px;
+      background-color: @odtv-white;
+    }
+  }
+
+  // main body
   .entry-content {
     .content-quote {
       position: relative;

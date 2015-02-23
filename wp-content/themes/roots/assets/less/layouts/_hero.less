@@ -76,7 +76,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: ~"calc( 100% - 0px)";
   }
 
   .contentWrapper {
@@ -95,14 +95,6 @@
     height:100vh;
     min-height: 600px;
     position: relative;
-  }
-
-  .playbutton {
-    color: darken(@odtv-white, 20%);
-
-    &:hover {
-      text-decoration: none;
-    }
   }
 
   .hero-logo {
@@ -128,13 +120,20 @@
     @media (min-width: @screen-sm-min) {
       position:absolute;
       top: 40%;
-      left: 50%;
+      left: 48%;
       z-index: 999;
       margin: 0;
       text-align: left;
     }
 
     .playbutton {
+      color: darken(@odtv-white, 20%);
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+
       i {
         font-size: 60px;
         opacity: 0.4;
@@ -225,15 +224,15 @@
         padding: 8px 16px;
 
         @media (min-width: @screen-sm-min) {
-          margin-top: 15px;
+          margin-top: 10px;
         }
 
         @media (min-width: @screen-lg-min) {
-          margin-top: 25px;
+          margin-top: 35px;
         }
 
         @media (min-width: @screen-xl-min) {
-          margin-top: 25px;
+          margin-top: 35px;
         }
       }
     }
