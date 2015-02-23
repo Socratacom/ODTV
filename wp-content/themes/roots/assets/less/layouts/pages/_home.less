@@ -5,12 +5,16 @@
   border-bottom: 1px solid @med-gray;
 
   h2 {
-    float: left;
-    margin: 24px 0 0 0;
+    @media (min-width: @screen-sm-min) {
+      float: left;
+      margin: 24px 0 0 0;
+    }
   }
 
   .searchbar {
-    float: right;
+    @media (min-width: @screen-sm-min) {
+      float: right;
+    }
   }
 
   &:after {
@@ -23,5 +27,9 @@
 section {
   #homefilter {
     margin: 0 auto;
+    width: 100%;
+    @media (min-width: @screen-sm-min) {
+      width: auto;
+    }
   }
 }

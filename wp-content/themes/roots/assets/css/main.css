@@ -8041,7 +8041,7 @@ p {
   opacity: 0.8;
 }
 .hero-container .hero-arrow {
-  margin: 40px 0;
+  margin: 20px 0;
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -8443,6 +8443,7 @@ footer.bodyfooter .social {
           background-size: cover;
   background-position: top center;
   height: auto;
+  padding-bottom: 30px;
 }
 footer.bodyfooter .social h4 {
   font-size: 20px;
@@ -8816,12 +8817,16 @@ body {
   padding-bottom: 10px;
   border-bottom: 1px solid #575757;
 }
-.section-header h2 {
-  float: left;
-  margin: 24px 0 0 0;
+@media (min-width: 768px) {
+  .section-header h2 {
+    float: left;
+    margin: 24px 0 0 0;
+  }
 }
-.section-header .searchbar {
-  float: right;
+@media (min-width: 768px) {
+  .section-header .searchbar {
+    float: right;
+  }
 }
 .section-header:after {
   content: "";
@@ -8830,6 +8835,12 @@ body {
 }
 section #homefilter {
   margin: 0 auto;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  section #homefilter {
+    width: auto;
+  }
 }
 .single-video .banner.fixed {
   position: static;
