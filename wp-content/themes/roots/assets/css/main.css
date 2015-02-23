@@ -8833,12 +8833,12 @@ body {
   display: table;
   clear: both;
 }
-section #homefilter {
+#homefilter {
   margin: 0 auto;
   width: 100%;
 }
 @media (min-width: 768px) {
-  section #homefilter {
+  #homefilter {
     width: auto;
   }
 }
