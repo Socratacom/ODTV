@@ -59,7 +59,7 @@
             </div>
             <div class="statsContainer-stats">
               <div class="stats-number">
-                <p><span class="livefyre-commentcount" data-lf-site-id="371534" data-lf-article-id="<?php the_permalink(); ?>">
+                <p><span class="livefyre-commentcount" data-lf-site-id="371534" data-lf-article-id="<?php the_ID(); ?>">
 0</span></p>
               </div>
               <div class="stats-label">
