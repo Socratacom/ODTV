@@ -43,7 +43,11 @@
                     <div class="content-img">
                       <div class="img-container">';
         echo           '<img src="' . $featured_image . '" class="img-responsive" alt="' . $title . '">
-                        <div class="container-icon"><i class="icon-eye"></i></div>
+                        <div class="container-icon">
+                          <div class="icon-ribbon">
+                            <i class="icon-star-full"></i>
+                          </div>
+                        </div>
                       </div>
                       <div class="img-overlay">
                         <div class="overlay-text">';
