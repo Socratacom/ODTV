@@ -8004,28 +8004,28 @@ p {
     height: auto;
   }
 }
-.hero-container .content-play {
+.hero-container .hero-play {
   margin: 40px 0;
   text-align: center;
 }
 @media (min-width: 768px) {
-  .hero-container .content-play {
+  .hero-container .hero-play {
     position: absolute;
     top: 40%;
-    left: 48%;
+    left: calc(50% - 60px);
     z-index: 999;
     margin: 0;
     text-align: left;
   }
 }
-.hero-container .content-play .playbutton {
+.hero-container .hero-play .playbutton {
   color: #c1c1c1;
 }
-.hero-container .content-play .playbutton:hover,
-.hero-container .content-play .playbutton:focus {
+.hero-container .hero-play .playbutton:hover,
+.hero-container .hero-play .playbutton:focus {
   text-decoration: none;
 }
-.hero-container .content-play .playbutton i {
+.hero-container .hero-play .playbutton i {
   font-size: 60px;
   opacity: 0.4;
   -webkit-transition: opacity 0.5s;
@@ -8033,11 +8033,47 @@ p {
   transition: opacity 0.5s;
 }
 @media (min-width: 768px) {
-  .hero-container .content-play .playbutton i {
+  .hero-container .hero-play .playbutton i {
     font-size: 120px;
   }
 }
-.hero-container .content-play .playbutton i:hover {
+.hero-container .hero-play .playbutton i:hover {
+  opacity: 0.8;
+}
+.hero-container .hero-arrow {
+  margin: 40px 0;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .hero-container .hero-arrow {
+    position: absolute;
+    bottom: 15px;
+    left: calc(50% - 28px);
+    z-index: 999;
+    margin: 0;
+    text-align: left;
+  }
+}
+.hero-container .hero-arrow .arrowbutton {
+  color: #c1c1c1;
+}
+.hero-container .hero-arrow .arrowbutton:hover,
+.hero-container .hero-arrow .arrowbutton:focus {
+  text-decoration: none;
+}
+.hero-container .hero-arrow .arrowbutton i {
+  font-size: 30px;
+  opacity: 0.4;
+  -webkit-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+@media (min-width: 768px) {
+  .hero-container .hero-arrow .arrowbutton i {
+    font-size: 30px;
+  }
+}
+.hero-container .hero-arrow .arrowbutton i:hover {
   opacity: 0.8;
 }
 @media (min-width: 768px) {
@@ -8058,7 +8094,7 @@ p {
 }
 @media (min-width: 1200px) {
   .hero-container .hero-content .content-text .text-headline h1 {
-    max-width: 50%;
+    max-width: 40%;
   }
 }
 @media (min-width: 1600px) {
@@ -8081,13 +8117,13 @@ p {
 }
 @media (min-width: 1200px) {
   .hero-container .hero-content .content-text .text-subtext p {
-    max-width: 50%;
+    max-width: 40%;
     font-size: 20px;
   }
 }
 @media (min-width: 1600px) {
   .hero-container .hero-content .content-text .text-subtext p {
-    max-width: 60%;
+    max-width: 40%;
   }
 }
 .hero-container .hero-content .content-buttons {
@@ -8691,6 +8727,10 @@ footer.bodyfooter .social .gform_wrapper .top_label .gfield_label {
 }
 footer.bodyfooter .social .gform_wrapper .top_label .ginput_container input {
   width: 100%;
+}
+footer.bodyfooter .social .gform_wrapper #gform_submit_button_1 {
+  float: right;
+  margin: 0;
 }
 footer.bodyfooter .social .gform_footer {
   margin: 10px 0 0 0;

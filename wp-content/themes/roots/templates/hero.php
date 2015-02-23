@@ -69,7 +69,7 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/odtv-logo-hero.png" alt="logo">
               </div>
 
-              <div class="content-play">
+              <div class="hero-play">
                 <a href="#" class="playbutton"><i class="icon-play"></i></a>
               </div>
 
@@ -89,6 +89,10 @@
                   <a href="http://www.socrata.com/open-data-field-guide-chapter/about/?utm_source=odtv&utm_medium=organic&utm_content=cta&utm_campaign=open-data-field-guide" class="btn btn-default btn-secondary">What is Open Data</a>
                 </div>
 
+              </div>
+
+              <div class="hero-arrow">
+                <a href="#featured" class="arrowbutton"><i class="icon-chevron-down"></i></a>
               </div>
 
             </div>
