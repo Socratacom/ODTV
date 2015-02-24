@@ -359,6 +359,19 @@ footer.bodyfooter {
     }
 
     .gform_wrapper {
+
+      .gform_body {
+        @media (min-width: @screen-sm-min) {
+          float: left;
+        }
+      }
+
+      .gform_footer {
+        @media (min-width: @screen-sm-min) {
+          float: left;
+        }
+      }
+
       .top_label {
         .gfield_label {
           display: none;
@@ -366,19 +379,38 @@ footer.bodyfooter {
 
         .ginput_container {
           input {
-            width: 100%;
+            width: 350px;
+
+            @media (min-width: @screen-sm-min) {
+              width: 100px;
+            }
+
+            @media (min-width: @screen-md-min) {
+              width: 160px;
+            }
+
+            @media (min-width: @screen-lg-min) {
+              width: 195px;
+            }
+
+            @media (min-width: @screen-xl-min) {
+              width: 320px;
+            }
           }
         }
       }
 
       #gform_submit_button_1 {
-        float: right;
         margin: 0;
+
+        @media (min-width: @screen-sm-min) {
+          float: right;
+        }
       }
     }
 
     .gform_footer {
-      margin: 10px 0 0 0;
+      margin: 0;
       padding: 0;
     }
   }

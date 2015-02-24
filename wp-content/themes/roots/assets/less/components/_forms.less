@@ -302,7 +302,11 @@ textarea.ginput_container input,textarea.ginput_container select,textarea.ginput
     }
 
     input:not([type='checkbox']) {
-      height: 38px;
+      height: 32px;
+
+      @media (min-width: @screen-lg-min) {
+        height: 46px;
+      }
     }
   }
 }
@@ -325,7 +329,7 @@ textarea.ginput_container input,textarea.ginput_container select,textarea.ginput
   font-size: 14px;
 }
 
-//
+// live filter
 
 #homefilter {
   padding: 8px;
