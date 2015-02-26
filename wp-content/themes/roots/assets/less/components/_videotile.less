@@ -142,12 +142,18 @@
         color: #fff;
 
         .text-excerpt {
-          margin:15px 0 0 0;
+          @media (min-width: @screen-sm-min) {
+            margin:15px 0 0 0;
+          }
 
           p {
-            font-size: 14px;
+            font-size: 12px;
             font-weight: 400;
             line-height: 1.4;
+
+            @media (min-width: @screen-sm-min) {
+              font-size: 14px;
+            }
 
             @media (min-width: @screen-md-min) {
               font-size: 12px;

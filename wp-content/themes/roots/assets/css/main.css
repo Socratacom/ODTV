@@ -7575,13 +7575,20 @@ p {
   display: block;
   color: #fff;
 }
-.videotile-content .content-img .img-overlay .overlay-text .text-excerpt {
-  margin: 15px 0 0 0;
+@media (min-width: 768px) {
+  .videotile-content .content-img .img-overlay .overlay-text .text-excerpt {
+    margin: 15px 0 0 0;
+  }
 }
 .videotile-content .content-img .img-overlay .overlay-text .text-excerpt p {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 1.4;
+}
+@media (min-width: 768px) {
+  .videotile-content .content-img .img-overlay .overlay-text .text-excerpt p {
+    font-size: 14px;
+  }
 }
 @media (min-width: 992px) {
   .videotile-content .content-img .img-overlay .overlay-text .text-excerpt p {
@@ -8008,7 +8015,7 @@ p {
   }
 }
 .hero-container .hero-logo {
-  top: 40px;
+  margin-top: 20px;
 }
 @media (min-width: 768px) {
   .hero-container .hero-logo {
@@ -8372,15 +8379,31 @@ p {
 }
 .banner .navbar-brand {
   height: auto;
-  margin-top: 25px;
+  margin-top: 5px;
+}
+@media (min-width: 768px) {
+  .banner .navbar-brand {
+    margin-top: 25px;
+  }
 }
 .banner .navbar-brand img {
-  height: 40px;
+  height: 20px;
+}
+@media (min-width: 768px) {
+  .banner .navbar-brand img {
+    height: 40px;
+  }
 }
 .banner .nav-buttons {
-  float: left;
-  margin-top: 50px;
-  margin-left: 20px;
+  float: right;
+  margin-top: 15px;
+}
+@media (min-width: 768px) {
+  .banner .nav-buttons {
+    float: right;
+    margin-top: 50px;
+    margin-left: 20px;
+  }
 }
 .banner .nav-buttons .btn,
 .banner .nav-buttons .comment-form input[type="submit"] {
@@ -8397,11 +8420,23 @@ p {
   width: 400px;
 }
 .banner .nav-right {
-  float: right;
+  float: left;
+  padding: 0 15px;
+}
+@media (min-width: 768px) {
+  .banner .nav-right {
+    float: right;
+    padding: 0;
+  }
 }
 .banner .nav-right .nav-social {
   display: inline-block;
-  margin-top: 30px;
+  margin-top: 10px;
+}
+@media (min-width: 768px) {
+  .banner .nav-right .nav-social {
+    margin-top: 30px;
+  }
 }
 .banner .nav-right .nav-social .social-label {
   font-size: 12px;
@@ -8757,7 +8792,7 @@ footer.bodyfooter .social .gform_wrapper .top_label .gfield_label {
   display: none;
 }
 footer.bodyfooter .social .gform_wrapper .top_label .ginput_container input {
-  width: 350px;
+  width: 100%;
 }
 @media (min-width: 768px) {
   footer.bodyfooter .social .gform_wrapper .top_label .ginput_container input {
