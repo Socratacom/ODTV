@@ -8323,6 +8323,17 @@ p {
   -o-transition: all 0.5s;
   transition: all 0.5s;
   /*.nav-search {
+    float: left;
+    margin-top: 30px;
+    margin-left: @buttonMarginLeft;
+
+    input {
+      height: 38px;
+      width: 400px;
+    }
+  }
+
+  .nav-search {
     position: absolute;
     right: 0;
     display: inline-block;
@@ -8400,7 +8411,7 @@ p {
 }
 @media (min-width: 768px) {
   .banner .nav-buttons {
-    float: right;
+    float: left;
     margin-top: 50px;
     margin-left: 20px;
   }
@@ -8409,15 +8420,6 @@ p {
 .banner .nav-buttons .comment-form input[type="submit"] {
   padding: 8px 16px;
   font-size: 12px;
-}
-.banner .nav-search {
-  float: left;
-  margin-top: 30px;
-  margin-left: 20px;
-}
-.banner .nav-search input {
-  height: 38px;
-  width: 400px;
 }
 .banner .nav-right {
   float: left;

@@ -20,6 +20,8 @@
       <a href="<?php echo $cta_link; ?>" class="btn btn-default"><?php echo $cta_label; ?></a>
     </div>
 
+    <div class="visible-xs" style="clear:both;"></div>
+
     <div class="nav-right">
       <div class="nav-social">
         <div class="social-label">Share ODTV:</div>
