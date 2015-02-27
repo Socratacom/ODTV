@@ -36,6 +36,7 @@
                 'controls': 0,
                 'rel' : 0,
                 'html5' : 1,
+                'playsinline' : 1,
                 'showinfo' : 0
               },
               events: {
@@ -46,8 +47,7 @@
         }
 
         function onPlayerReady(event) {
-            event.target.seekTo(0, false);
-            event.target.stopVideo();
+
         }
 
         function onPlayerStateChange(event) {
