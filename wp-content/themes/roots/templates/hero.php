@@ -46,7 +46,8 @@
         }
 
         function onPlayerReady(event) {
-            //event.target.playVideo();
+            event.target.seekTo(0, false);
+            event.target.stopVideo();
         }
 
         function onPlayerStateChange(event) {
