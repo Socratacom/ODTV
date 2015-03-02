@@ -7732,17 +7732,34 @@ p {
   font-weight: 400;
 }
 .template-socialBar {
-  height: 65px;
   border-bottom: 1px solid #575757;
   background-color: #f4f4f4;
 }
+@media (min-width: 768px) {
+  .template-socialBar {
+    height: 65px;
+  }
+}
 .template-socialBar .socialBar-label {
-  float: left;
-  margin: 25px 20px 0 40px;
+  text-align: center;
+  margin: 25px 10px 0 10px;
+}
+@media (min-width: 768px) {
+  .template-socialBar .socialBar-label {
+    float: left;
+    margin: 25px 20px 0 40px;
+    text-align: left;
+  }
 }
 .template-socialBar .socialBar-addThis {
-  float: left;
   margin-top: 20px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .template-socialBar .socialBar-addThis {
+    float: left;
+    text-align: left;
+  }
 }
 .template-socialBar .socialBar-addThis .addThis-widget {
   display: inline-block;
@@ -7755,12 +7772,23 @@ p {
   text-decoration: none;
 }
 .template-socialBar .socialBar-addThis .addThis-widget a i {
-  font-size: 30px;
+  font-size: 20px;
   color: #575757;
 }
+@media (min-width: 768px) {
+  .template-socialBar .socialBar-addThis .addThis-widget a i {
+    font-size: 30px;
+  }
+}
 .template-socialBar .socialBar-statsContainer {
-  float: right;
+  text-align: center;
   padding: 0 20px 0 0;
+}
+@media (min-width: 768px) {
+  .template-socialBar .socialBar-statsContainer {
+    float: right;
+    text-align: left;
+  }
 }
 .template-socialBar .socialBar-statsContainer .statsContainer-stats {
   display: inline-block;

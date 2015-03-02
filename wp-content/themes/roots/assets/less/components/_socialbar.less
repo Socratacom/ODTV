@@ -1,16 +1,30 @@
 .template-socialBar {
-  height: 65px;
   border-bottom: 1px solid @med-gray;
   background-color: @odtv-white;
 
+  @media (min-width: @screen-sm-min) {
+    height: 65px;
+  }
+
   .socialBar-label {
-    float: left;
-    margin: 25px 20px 0 40px;
+    text-align: center;
+    margin: 25px 10px 0 10px;
+
+    @media (min-width: @screen-sm-min) {
+      float: left;
+      margin: 25px 20px 0 40px;
+      text-align: left;
+    }
   }
 
   .socialBar-addThis {
-    float: left;
     margin-top: 20px;
+    text-align: center;
+
+    @media (min-width: @screen-sm-min) {
+      float: left;
+      text-align: left;
+    }
 
     .addThis-widget {
       display: inline-block;
@@ -24,16 +38,25 @@
         }
 
         i {
-          font-size: 30px;
+          font-size: 20px;
           color: @med-gray;
+
+          @media (min-width: @screen-sm-min) {
+            font-size: 30px;
+          }
         }
       }
     }
   }
 
   .socialBar-statsContainer {
-    float: right;
+    text-align: center;
     padding: 0 20px 0 0;
+
+    @media (min-width: @screen-sm-min) {
+      float: right;
+      text-align: left;
+    }
 
     .statsContainer-stats {
       display: inline-block;
