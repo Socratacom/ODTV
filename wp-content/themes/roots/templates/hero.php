@@ -19,48 +19,48 @@
       <div class="videoWrapper">
 
 
-        <div id="player"></div>
+        <iframe src="http://livestream.com/accounts/1222835/events/3958700/player?width=560&height=315&mute=false&autoPlay=false" width="560" height="315" frameborder="0" scrolling="no"> </iframe>
 
         <script>
 
-        var tag = document.createElement('script');
-        tag.src = "//www.youtube.com/player_api";
-        var firstScriptTag = document.getElementsByTagName('script')[0];
-        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        // var tag = document.createElement('script');
+        // tag.src = "//www.youtube.com/player_api";
+        // var firstScriptTag = document.getElementsByTagName('script')[0];
+        // firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-        var player;
-        function onYouTubePlayerAPIReady() {
-            player = new YT.Player('player', {
-              height: '390',
-              width: '640',
-              videoId: 'SWHeUeB0Dqs',
-              playerVars: {
-                'modestbranding' : 1,
-                'autoplay': 0,
-                'controls': 0,
-                'rel' : 0,
-                'html5' : 1,
-                'playsinline' : 1,
-                'showinfo' : 0
-              },
-              events: {
-                'onReady': onPlayerReady,
-                'onStateChange': onPlayerStateChange
-              }
-            });
-        }
+        // var player;
+        // function onYouTubePlayerAPIReady() {
+        //     player = new YT.Player('player', {
+        //       height: '390',
+        //       width: '640',
+        //       videoId: 'SWHeUeB0Dqs',
+        //       playerVars: {
+        //         'modestbranding' : 1,
+        //         'autoplay': 0,
+        //         'controls': 0,
+        //         'rel' : 0,
+        //         'html5' : 1,
+        //         'playsinline' : 1,
+        //         'showinfo' : 0
+        //       },
+        //       events: {
+        //         'onReady': onPlayerReady,
+        //         'onStateChange': onPlayerStateChange
+        //       }
+        //     });
+        // }
 
-        function onPlayerReady(event) {
-            event.target.seekTo(0, false);
-            event.target.stopVideo();
-        }
+        // function onPlayerReady(event) {
+        //     event.target.seekTo(0, false);
+        //     event.target.stopVideo();
+        // }
 
-        function onPlayerStateChange(event) {
-          if(event.data === 0) {
-            $('.videoWrapper').removeClass('visible');
-            $('.contentWrapper').removeClass('hidden');
-          }
-        }
+        // function onPlayerStateChange(event) {
+        //   if(event.data === 0) {
+        //     $('.videoWrapper').removeClass('visible');
+        //     $('.contentWrapper').removeClass('hidden');
+        //   }
+        // }
 
         </script>
 

@@ -115,17 +115,25 @@ var Roots = {
       });
 
       $('.playbutton').click(function() {
+        $('.videoWrapper iframe').attr( 'src', function ( i, val ) {
+          var newVal = val.replace('&autoPlay=false','&autoPlay=true');
+          return newVal;
+        });
         $('.videoWrapper').addClass('visible');
         $('.contentWrapper').addClass('hidden');
-        player.seekTo(0, false);
-        player.playVideo();
+        //player.seekTo(0, false);
+        //player.playVideo();
       });
 
       $('.video-close').click(function() {
+        $('.videoWrapper iframe').attr( 'src', function ( i, val ) {
+          var newVal = val.replace('&autoPlay=true','&autoPlay=false');
+          return newVal;
+        });
         $('.videoWrapper').removeClass('visible');
         $('.contentWrapper').removeClass('hidden');
-        player.stopVideo();
-        player.clearVideo();
+        //player.stopVideo();
+        //player.clearVideo();
       });
 
       //smooth scroll to anchor
