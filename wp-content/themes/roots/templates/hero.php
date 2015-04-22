@@ -1,6 +1,10 @@
 <?php
+
+  $hero_title = get_field('hero_title');
+  $hero_message = get_field('hero_message');
   $cta_label = get_field('cta_label');
   $cta_link = get_field('cta_link');
+
   ?>
 
 
@@ -84,10 +88,10 @@
 
                 <div class="content-text">
                   <div class="text-headline">
-                    <h1>Welcome to Open&nbsp;Data&nbsp;TV</h1>
+                    <h1><?php echo $hero_title; ?></h1>
                   </div>
                   <div class="text-subtext">
-                    <p>Tune into ODTV to hear from the world’s foremost thought leaders on how government is using data to drive performance, boost the economy, and increase citizen engagement.</p>
+                    <?php echo $hero_message; ?>
                   </div>
                 </div>
 
