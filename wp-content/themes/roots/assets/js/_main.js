@@ -87,14 +87,14 @@ var Roots = {
 
       // live type update video filter input
       if( $("#homefilter").val().length === 0) {
-        $("#homefilter-text").html('Featured Videos');
+        $("#homefilter-text").html('All Videos');
       }
 
       $("#homefilter").keyup(function(){
         $("#homefilter-text").html('Results For: "' + $(this).val() + '"');
 
         if( $("#homefilter").val().length === 0) {
-          $("#homefilter-text").html('Featured Videos');
+          $("#homefilter-text").html('All Videos');
         }
       });
 
