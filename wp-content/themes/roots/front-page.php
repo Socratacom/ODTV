@@ -15,7 +15,7 @@
     <div class="searchbar">
       <input id="homefilter" class="filter__search js-shuffle-search" type="search" placeholder="Search ODTV">
     </div>
-    <h2><span id="homefilter-text">Featured Videos</span></h2>
+    <h2><span id="homefilter-text">All Videos</span></h2>
   </div>
 <?
  get_template_part('templates/featured');
