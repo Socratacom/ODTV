@@ -10,6 +10,8 @@
           'field'   => 'name',
           'terms'   => 'Featured',
           'operator' => 'NOT IN',
+          'terms'   => 'Datavision',
+          'operator' => 'NOT IN',
         ),
       ),
       'posts_per_page' => 10,
