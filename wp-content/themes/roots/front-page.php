@@ -4,7 +4,7 @@
 <?php while (have_posts()) : the_post(); ?>
 
   <div class="section-header">
-    <h2>Datavision</h2>
+    <h2>Data Driven Vision</h2>
   </div>
 
   <?
