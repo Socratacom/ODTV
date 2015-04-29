@@ -3,10 +3,6 @@
 
 <?php while (have_posts()) : the_post(); ?>
 
-  <div class="section-header">
-    <h2>Data Driven Vision</h2>
-  </div>
-
   <?
    get_template_part('templates/datavision');
   ?>

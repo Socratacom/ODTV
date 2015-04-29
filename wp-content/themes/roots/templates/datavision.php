@@ -1,6 +1,3 @@
-<section class="section-results">
-  <div class="row">
-
   <?php
     $page_slug = $post->post_name;
 
@@ -35,34 +32,45 @@
         $speaker = get_field('speaker');
         $speaker_name = $speaker->post_title;
 
-        echo '<div class="item">';
-        echo '<a href="' . $link . '" title="' . $title . '" class="videotile-link" data-backdrop="static">
-                <div class="videotile">
-                  <div class="videotile-content">
-                    <div class="content-img">
-                      <div class="img-container">';
-        echo           '<img src="' . $featured_image . '" class="img-responsive" alt="' . $title . '">
-                      </div>
-                      <div class="img-overlay">
-                        <div class="overlay-text">';
-            echo          '<div class="text-excerpt"><p>' . $post_excerpt . '</p></div>
-                           <div class="text-icons">
-                            <ul class="list list-inline">';
-            echo              '<li><i class="icon-clock"></i> ' . $post_runtime . '<li>';
-            echo              '<li><i class="icon-eye"></i> ' . do_shortcode($post_views) . '<li>
-                            </ul>
+    echo' <div class="section-header">
+            <h2>Data Driven Vision</h2>
+          </div>
+
+          <section class="section-results">
+            <div class="row">';
+
+        echo '<div class="item">
+                <a href="' . $link . '" title="' . $title . '" class="videotile-link" data-backdrop="static">
+                  <div class="videotile">
+                    <div class="videotile-content">
+                      <div class="content-img">
+                        <div class="img-container">';
+          echo           '<img src="' . $featured_image . '" class="img-responsive" alt="' . $title . '">
+                        </div>
+                        <div class="img-overlay">
+                          <div class="overlay-text">';
+              echo          '<div class="text-excerpt"><p>' . $post_excerpt . '</p></div>
+                             <div class="text-icons">
+                              <ul class="list list-inline">';
+              echo              '<li><i class="icon-clock"></i> ' . $post_runtime . '<li>';
+              echo              '<li><i class="icon-eye"></i> ' . do_shortcode($post_views) . '<li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="content-text">';
-        echo          '<div class="text-title"><p>' . $title . '</p></div>';
-        echo          '<div class="text-postdate"><p>' . $speaker_name . '</p></div>
+                      <div class="content-text">';
+          echo          '<div class="text-title"><p>' . $title . '</p></div>';
+          echo          '<div class="text-postdate"><p>' . $speaker_name . '</p></div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </a>
-              </div>';
+                </a>
+              </div>
+            </div>
+          </section>';
+
+
       endwhile;
 
     endif;
