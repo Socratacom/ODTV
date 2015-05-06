@@ -8,13 +8,14 @@
         array(
           'taxonomy'  => 'video-category',
           'field'   => 'name',
-          'terms'   => 'Featured',
-          'operator' => 'NOT IN',
-          'terms'   => 'Datavision',
-          'operator' => 'NOT IN',
+          'terms'   => array(
+            'Featured',
+            'Datavision'
+            ),
+          'operator' => 'NOT IN'
         ),
       ),
-      'posts_per_page' => 10,
+      'posts_per_page' => 500,
     );
 
     $loop = new WP_Query( $args );
