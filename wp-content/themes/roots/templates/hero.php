@@ -5,64 +5,49 @@
   $cta_label = get_field('cta_label');
   $cta_link = get_field('cta_link');
 
-  ?>
+  $video = '';
+  $player = '';
+  if( have_rows('video') ) {
+    while ( have_rows('video') ) { the_row();
+      if( get_row_layout() == 'youtube' ) {
+        $embed = get_sub_field('embed');
+        preg_match('/src="(.+?)"/', $embed, $matches);
+        $src = $matches[1];
+        $params = array(
+            'enablejsapi' => 1,
+            'modestbranding' => 1,
+            'rel'   => 0,
+            'controls'  => 0,
+            'html5'     => 1,
+            'showinfo'  =>0,
+            'playsinline' => 1,
+            'autoplay' => 0
+        );
+        $video = add_query_arg($params, $src);
+        $player = 'player';
+      } else if( get_row_layout() == 'livestream' ) {
+        $video = get_sub_field('url');
+        $player = 'livestream';
+      }
+    }
+  }
 
+  $background_image = get_field('background_image');
+  $background_video_webm = get_field('background_video_webm');
+  $background_video_mp4 = get_field('background_video_mp4');
+  ?>
 
 <section>
   <div class="hero">
-    <video id="bgvid" preload autoplay loop poster="<?php echo get_template_directory_uri(); ?>/assets/img/hero_bg.jpg">
-      <source src="/wp-content/uploads/2015/02/hero-loop.webm" type="video/webm">
-      <source src="/wp-content/uploads/2015/02/hero-loop.mp4" type="video/mp4">
+    <video id="bgvid" preload autoplay loop poster="<?php echo $background_image; ?>">
+      <source src="<?php echo $background_video_webm['url']; ?>" type="video/webm">
+      <source src="<?php echo $background_video_mp4['url']; ?>" type="video/mp4">
     </video>
 
     <div class="hero-video">
       <div class="videoWrapper">
 
-
-        <iframe src="http://livestream.com/accounts/4241684/events/2152811/player?width=560&height=315&autoPlay=false&mute=false" width="560" height="315" frameborder="0" scrolling="no"> </iframe>
-
-        <script>
-
-        // var tag = document.createElement('script');
-        // tag.src = "//www.youtube.com/player_api";
-        // var firstScriptTag = document.getElementsByTagName('script')[0];
-        // firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-        // var player;
-        // function onYouTubePlayerAPIReady() {
-        //     player = new YT.Player('player', {
-        //       height: '390',
-        //       width: '640',
-        //       videoId: 'SWHeUeB0Dqs',
-        //       playerVars: {
-        //         'modestbranding' : 1,
-        //         'autoplay': 0,
-        //         'controls': 0,
-        //         'rel' : 0,
-        //         'html5' : 1,
-        //         'playsinline' : 1,
-        //         'showinfo' : 0
-        //       },
-        //       events: {
-        //         'onReady': onPlayerReady,
-        //         'onStateChange': onPlayerStateChange
-        //       }
-        //     });
-        // }
-
-        // function onPlayerReady(event) {
-        //     event.target.seekTo(0, false);
-        //     event.target.stopVideo();
-        // }
-
-        // function onPlayerStateChange(event) {
-        //   if(event.data === 0) {
-        //     $('.videoWrapper').removeClass('visible');
-        //     $('.contentWrapper').removeClass('hidden');
-        //   }
-        // }
-
-        </script>
+        <iframe id="<?php echo $player; ?>" src="<?php echo $video; ?>" width="560" height="315" frameborder="0" scrolling="no"></iframe>
 
         <a href="#" class="video-close">X</a>
       </div>
