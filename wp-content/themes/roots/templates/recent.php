@@ -10,7 +10,8 @@
           'field'   => 'name',
           'terms'   => array(
             'Featured',
-            'Datavision'
+            'Datavision',
+            'Multi-City-Innovation'
             ),
           'operator' => 'NOT IN'
         ),

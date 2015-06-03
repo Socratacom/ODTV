@@ -8952,6 +8952,15 @@ body {
   display: table;
   clear: both;
 }
+.section-header .cta {
+  margin: 0;
+  float: none;
+}
+@media (min-width: 768px) {
+  .section-header .cta {
+    float: right;
+  }
+}
 #homefilter {
   margin: 0 auto;
   width: 100%;

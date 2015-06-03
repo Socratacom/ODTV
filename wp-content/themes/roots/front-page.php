@@ -13,10 +13,15 @@
     </div>
     <h2><span id="homefilter-text">All Videos</span></h2>
   </div>
-<?
- get_template_part('templates/featured');
- get_template_part('templates/recent');
-?>
+
+  <?
+   get_template_part('templates/featured');
+   get_template_part('templates/recent');
+  ?>
+
+  <?
+   get_template_part('templates/multicityinnovation');
+  ?>
 
 
 <?php
