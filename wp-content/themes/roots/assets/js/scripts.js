@@ -2313,6 +2313,32 @@
  * remove or comment out: add_theme_support('jquery-cdn');
  * ======================================================================== */
 
+
+// Youtube Control
+var tag = document.createElement('script');
+tag.src = '//www.youtube.com/player_api';
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+var player;
+
+function onPlayerReady(event) {
+ var closeButton = document.getElementById('close-button');
+ closeButton.addEventListener('click', function() {
+   player.stopVideo();
+ });
+}
+
+function onYouTubeIframeAPIReady() {
+ player = new YT.Player('player', {
+   events: {
+     'onReady': onPlayerReady
+   }
+ });
+}
+
+
+
 (function($) {
 
 // Use this variable to set up the common and page specific functions. If you
@@ -2413,18 +2439,38 @@ var Roots = {
         }
       });
 
+
+      // Homepage hero play/close buttons
       $('.playbutton').click(function() {
         $('.videoWrapper').addClass('visible');
         $('.contentWrapper').addClass('hidden');
-        player.seekTo(0, false);
-        player.playVideo();
+        // check if youtube video oembed
+        if ( $(".videoWrapper #player").length === 1 ) {
+          player.seekTo(0, false);
+          player.playVideo();
+        //check if livestream video embed url
+        } else if ( $(".videoWrapper #livestream").length === 1 ) {
+          $('.videoWrapper iframe').attr( 'src', function ( i, val ) {
+            var newVal = val.replace('&autoPlay=false','&autoPlay=true');
+            return newVal;
+          });
+        }
       });
 
       $('.video-close').click(function() {
         $('.videoWrapper').removeClass('visible');
         $('.contentWrapper').removeClass('hidden');
-        player.stopVideo();
-        player.clearVideo();
+        // check if youtube video oembed
+        if ( $(".videoWrapper #player").length === 1 ) {
+          player.stopVideo();
+          player.clearVideo();
+        //check if livestream video embed url
+        } else if ( $(".videoWrapper #livestream").length === 1 ) {
+          $('.videoWrapper iframe').attr( 'src', function ( i, val ) {
+            var newVal = val.replace('&autoPlay=true','&autoPlay=false');
+            return newVal;
+          });
+        }
       });
 
       //smooth scroll to anchor

@@ -8141,6 +8141,7 @@ p {
 .hero-container .hero-content .content-text .text-headline h1 {
   margin: 10px 0;
   max-width: 100%;
+  font-size: 2.5em;
 }
 @media (min-width: 768px) {
   .hero-container .hero-content .content-text .text-headline h1 {
@@ -8155,6 +8156,11 @@ p {
 @media (min-width: 1600px) {
   .hero-container .hero-content .content-text .text-headline h1 {
     max-width: 60%;
+  }
+}
+@media (min-height: 760px) {
+  .hero-container .hero-content .content-text .text-headline h1 {
+    font-size: 3.5em;
   }
 }
 .hero-container .hero-content .content-text .text-subtext {
@@ -8179,6 +8185,16 @@ p {
 @media (min-width: 1600px) {
   .hero-container .hero-content .content-text .text-subtext p {
     max-width: 40%;
+  }
+}
+@media (min-height: 320px) {
+  .hero-container .hero-content .content-text .text-subtext p {
+    font-size: 1.3em;
+  }
+}
+@media (min-height: 760px) {
+  .hero-container .hero-content .content-text .text-subtext p {
+    font-size: 1.5em;
   }
 }
 .hero-container .hero-content .content-buttons {
