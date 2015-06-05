@@ -214,6 +214,11 @@
           @media (min-width: @screen-xl-min) {
             max-width: @heroTextContainerWidth;
           }
+
+          font-size: 2.5em;
+          @media (min-height: 760px) {
+            font-size: 3.5em;
+          }
         }
       }
 
@@ -236,6 +241,13 @@
 
           @media (min-width: @screen-xl-min) {
             max-width: @heroTextContainerWidth - 20;
+          }
+
+          @media (min-height: 320px) {
+            font-size: 1.3em;
+          }
+          @media (min-height: 760px) {
+            font-size: 1.5em;
           }
         }
       }
