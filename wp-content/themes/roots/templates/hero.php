@@ -39,7 +39,7 @@
 
 <section>
   <div class="hero">
-    <video id="bgvid" preload autoplay loop poster="<?php echo $background_image; ?>">
+    <video id="bgvid" preload autoplay loop poster="<?php echo $background_image['url']; ?>" style="background: url(<?php echo $background_image['url']; ?>);">
       <source src="<?php echo $background_video_webm['url']; ?>" type="video/webm">
       <source src="<?php echo $background_video_mp4['url']; ?>" type="video/mp4">
     </video>
