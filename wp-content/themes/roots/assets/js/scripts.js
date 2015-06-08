@@ -2355,6 +2355,18 @@ var Roots = {
         itemSelector: '.item'
       });
 
+      // shufflejs
+      var vid_grid_innovation = $('#vid_grid_innovation');
+      vid_grid_innovation.shuffle({
+        itemSelector: '.item'
+      });
+
+      // shufflejs
+      var vid_grid_datavision = $('#vid_grid_datavision');
+      vid_grid_datavision.shuffle({
+        itemSelector: '.item'
+      });
+
       // Advanced filtering
       $('.js-shuffle-search').on('keyup change', function() {
         var val = this.value.toLowerCase();

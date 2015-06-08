@@ -1,3 +1,11 @@
+<div class="section-header">
+  <h2>2015 Multi-City Innovation Campaign</h2>
+  <a href="http://2015cityinnovation.populr.me/" target="_blank" class="btn btn-primary cta">Learn More</a>
+</div>
+
+<section class="section-results">
+  <div class="row shuffle" id="vid_grid_innovation">
+
   <?php
     $page_slug = $post->post_name;
 
@@ -32,14 +40,6 @@
         $speaker = get_field('speaker');
         $speaker_name = $speaker->post_title;
 
-    echo' <div class="section-header">
-            <h2>2015 Multi-City Innovation Campaign</h2>
-            <a href="http://2015cityinnovation.populr.me/" target="_blank" class="btn btn-primary cta">Learn More</a>
-          </div>
-
-          <section class="section-results">
-            <div class="row">';
-
         echo '<div class="item">
                 <a href="' . $link . '" title="' . $title . '" class="videotile-link" data-backdrop="static">
                   <div class="videotile">
@@ -67,14 +67,10 @@
                     </div>
                   </div>
                 </a>
-              </div>
-            </div>
-          </section>';
-
-
+              </div>';
       endwhile;
-
     endif;
   ?>
+
   </div>
 </section>

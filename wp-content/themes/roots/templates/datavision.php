@@ -1,3 +1,10 @@
+<div class="section-header">
+  <h2>Data Driven Vision</h2>
+</div>
+
+<section class="section-results">
+  <div class="row shuffle"  id="vid_grid_datavision">
+
   <?php
     $page_slug = $post->post_name;
 
@@ -32,13 +39,6 @@
         $speaker = get_field('speaker');
         $speaker_name = $speaker->post_title;
 
-    echo' <div class="section-header">
-            <h2>Data Driven Vision</h2>
-          </div>
-
-          <section class="section-results">
-            <div class="row">';
-
         echo '<div class="item">
                 <a href="' . $link . '" title="' . $title . '" class="videotile-link" data-backdrop="static">
                   <div class="videotile">
@@ -66,13 +66,8 @@
                     </div>
                   </div>
                 </a>
-              </div>
-            </div>
-          </section>';
-
-
+              </div>';
       endwhile;
-
     endif;
   ?>
   </div>
