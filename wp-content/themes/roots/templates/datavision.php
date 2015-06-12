@@ -1,5 +1,5 @@
 <div class="section-header">
-  <h2>Data Driven Vision</h2>
+  <h2>Data-Driven Vision</h2>
 </div>
 
 <section class="section-results">

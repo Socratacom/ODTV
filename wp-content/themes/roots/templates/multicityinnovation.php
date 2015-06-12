@@ -1,5 +1,5 @@
 <div class="section-header">
-  <h2>2015 Multi-City Innovation Campaign</h2>
+  <h2 id="MCIC">2015 Multi-City Innovation Campaign</h2>
   <a href="http://2015cityinnovation.populr.me/" target="_blank" class="btn btn-primary cta">Learn More</a>
 </div>
 
