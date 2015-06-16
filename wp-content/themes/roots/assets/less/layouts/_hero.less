@@ -124,16 +124,11 @@
       left: ~"calc(50% - 60px)";
       z-index: 999;
       margin: 0;
-      text-align: left;
+      text-align: center;
     }
 
     .playbutton {
       color: darken(@odtv-white, 20%);
-
-      &:hover,
-      &:focus {
-        text-decoration: none;
-      }
 
       i {
         font-size: 60px;
@@ -144,8 +139,20 @@
         }
 
         .transition(opacity, 0.5s);
+      }
 
-        &:hover {
+      .play-label {
+        font-size: 1.5em;
+        line-height: 2;
+        opacity: 0.4;
+        .transition(opacity, 0.5s);
+      }
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+
+        i, .play-label {
           opacity: 0.8;
         }
       }

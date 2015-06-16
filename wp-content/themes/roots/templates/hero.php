@@ -66,7 +66,11 @@
               </div>
 
               <div class="hero-play">
-                <a href="#" class="playbutton"><i class="icon-play"></i></a>
+                <?php
+                  // label text is set in acf field group
+                  $label = get_field_object('play_button_label');
+                ?>
+                <a href="#" class="playbutton"><i class="icon-play"></i><br><?php if (true == $label['value']) { ?><span class="play-label"><?php echo $label['message']; ?></span><?php } ?></a>
               </div>
 
               <div class="hero-content">

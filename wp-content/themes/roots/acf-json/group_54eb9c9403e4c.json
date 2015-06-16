@@ -126,6 +126,23 @@
             ]
         },
         {
+            "key": "field_558079f1b245b",
+            "label": "Play Button Label",
+            "name": "play_button_label",
+            "prefix": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Watch Live",
+            "default_value": 0
+        },
+        {
             "key": "field_556f7a6bf2b29",
             "label": "Background Image",
             "name": "background_image",
@@ -247,5 +264,5 @@
     "hide_on_screen": [
         "the_content"
     ],
-    "modified": 1433369364
+    "modified": 1434483241
 }

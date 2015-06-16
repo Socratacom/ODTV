@@ -8070,15 +8070,11 @@ p {
     left: calc(50% - 60px);
     z-index: 999;
     margin: 0;
-    text-align: left;
+    text-align: center;
   }
 }
 .hero-container .hero-play .playbutton {
   color: #c1c1c1;
-}
-.hero-container .hero-play .playbutton:hover,
-.hero-container .hero-play .playbutton:focus {
-  text-decoration: none;
 }
 .hero-container .hero-play .playbutton i {
   font-size: 60px;
@@ -8092,7 +8088,22 @@ p {
     font-size: 120px;
   }
 }
-.hero-container .hero-play .playbutton i:hover {
+.hero-container .hero-play .playbutton .play-label {
+  font-size: 1.5em;
+  line-height: 2;
+  opacity: 0.4;
+  -webkit-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+.hero-container .hero-play .playbutton:hover,
+.hero-container .hero-play .playbutton:focus {
+  text-decoration: none;
+}
+.hero-container .hero-play .playbutton:hover i,
+.hero-container .hero-play .playbutton:focus i,
+.hero-container .hero-play .playbutton:hover .play-label,
+.hero-container .hero-play .playbutton:focus .play-label {
   opacity: 0.8;
 }
 .hero-container .hero-arrow {
